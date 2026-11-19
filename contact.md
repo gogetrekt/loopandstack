@@ -18,6 +18,3 @@ We read everything that arrives there. Please use a clear subject line; it helps
 - **Review requests and tips.** Suggest a tool we should review or compare. We cannot cover everything, and coverage is never for sale; see the [Affiliate Disclosure](/affiliate-disclosure/).
 - **Business and advertising.** Questions about the site, partnerships, and advertising.
 
-## GitHub
-
-You can also open an issue on our GitHub repository at github.com/gogetrekt/loopandstack, which is handy for factual corrections because the discussion stays public next to the article source.

@@ -32,7 +32,7 @@ Articles are published under editorial pen names, listed with their beats on the
 
 ## Corrections and updates
 
-If we get something wrong, we fix the article and, for anything material, note the correction in the article itself. Readers can flag errors by email at nethroes@proton.me or by opening an issue on our GitHub repository at github.com/gogetrekt/loopandstack.
+If we get something wrong, we fix the article and, for anything material, note the correction in the article itself. Readers can flag errors by email at nethroes@proton.me.
 
 When a tool changes its pricing or features, we update the existing article and its date rather than publishing a duplicate, so links readers have saved keep pointing at current information.
 
