@@ -4,12 +4,27 @@ title: Affiliate Disclosure
 permalink: /affiliate-disclosure/
 ---
 
-Loop and Stack is reader-supported. Some links on this site are affiliate links, which means we may earn a commission if you buy a product or sign up for a service through them, at no extra cost to you.
+Loop and Stack is reader-supported. This page explains how we make money from affiliate links, in plain terms.
 
-How this works in practice:
+## How affiliate links work
 
-- Articles that contain affiliate links say so near the top of the article.
-- Commissions never decide our rankings, scores, or recommendations. A tool that pays nothing can and does rank first when it is the best option. Our [Editorial Policy](/editorial-policy/) explains how reviews are put together.
-- Prices shown in articles are checked against the vendor's own pages on the day of publication. Vendors change prices often, so the vendor's page is always the final word.
+Some links on this site are affiliate links. If you click one and then buy a product or sign up for a service, the vendor may pay us a commission. The price you pay is the same as if you had gone to the vendor directly; commissions come out of the vendor's margin, never added to your bill.
 
-If you have questions about a specific recommendation, reach us through the [Contact](/contact/) page.
+We take part in affiliate programs run by software vendors and by affiliate networks on their behalf. A link is an affiliate link only when the vendor offers a program we have joined; many links on the site earn nothing.
+
+## How we tell you
+
+- Articles that contain affiliate links carry a short disclosure near the top.
+- This page is linked from the footer of every page on the site.
+
+## What commissions never do
+
+Commissions never decide our rankings, scores, verdicts, or which tools we cover. A tool with no affiliate program can and does rank first when it is the best option, and a tool that pays a high commission gets the same review format and the same scrutiny as everything else. Our [Editorial Policy](/editorial-policy/) sets out how reviews are put together and how we keep them independent.
+
+## Prices and accuracy
+
+Prices in articles are checked against the vendor's own pricing page on the day the article is published or updated. Vendors change prices, plans, and offers often, and they do not always announce it. If a price here differs from the vendor's page, the vendor's page is the correct one, and we would appreciate a heads-up at nethroes@proton.me so we can fix it.
+
+## Questions
+
+If anything about a recommendation is unclear, ask us through the [Contact](/contact/) page.
