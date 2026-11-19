@@ -1,0 +1,14 @@
+title: Loop and Stack
+description: "All about tech tools. Reviews, comparisons, and practical tutorials on software, AI tools, dev tools, and security tools."
+url: "https://loopandstack.tech"
+baseurl: ""
+lang: en
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+author:
+  name: Loop and Stack Editorial
