@@ -4,7 +4,7 @@ title: Affiliate Disclosure
 permalink: /affiliate-disclosure/
 ---
 
-Loop and Stack is reader-supported. This page explains how we make money from affiliate links, in plain terms.
+loop and stack is reader-supported. This page explains how we make money from affiliate links, in plain terms.
 
 ## How affiliate links work
 

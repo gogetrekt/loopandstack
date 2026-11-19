@@ -3,7 +3,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Loop and Stack is an independent tech publication about tools: software, AI tools, developer tools, and security tools. Plain English, current prices, no hype.
+loop and stack is an independent tech publication about tools: software, AI tools, developer tools, and security tools. Plain English, current prices, no hype.
 
 ## What we cover
 
@@ -28,7 +28,7 @@ Every article is researched fresh on the day it is published, from primary sourc
 
 ## Independence
 
-Loop and Stack is reader-funded through advertising and affiliate commissions. Vendors cannot pay for coverage, placement, or a better verdict, and we do not accept sponsored reviews. When a link can earn us a commission, the article says so. See the [Affiliate Disclosure](/affiliate-disclosure/).
+loop and stack is reader-funded through advertising and affiliate commissions. Vendors cannot pay for coverage, placement, or a better verdict, and we do not accept sponsored reviews. When a link can earn us a commission, the article says so. See the [Affiliate Disclosure](/affiliate-disclosure/).
 
 ## Get in touch
 

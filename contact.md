@@ -6,7 +6,7 @@ permalink: /contact/
 
 ## Email
 
-The best way to reach the Loop and Stack team is by email:
+The best way to reach the loop and stack team is by email:
 
 **nethroes@proton.me**
 

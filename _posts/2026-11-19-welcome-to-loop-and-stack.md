@@ -1,12 +1,12 @@
 ---
-title: "Welcome to Loop and Stack"
+title: "Welcome to loop and stack"
 date: 2026-11-19 23:40:00 +0700
 categories: [Announcements]
 tags: [news]
-description: "Loop and Stack is live. Tech tools, reviewed and compared in plain English, one article every weekday."
+description: "loop and stack is live. Tech tools, reviewed and compared in plain English, one article every weekday."
 ---
 
-Loop and Stack is live.
+loop and stack is live.
 
 We write about tech tools: software picks, AI tools, developer tooling, and security tools. Expect comparisons that show current prices, tutorials that use the current version, and reviews that say what a tool is bad at, not just what it is good at.
 

@@ -4,7 +4,7 @@ title: Editorial Policy
 permalink: /editorial-policy/
 ---
 
-This page explains how Loop and Stack content is researched, written, checked, and corrected. It applies to every article on the site.
+This page explains how loop and stack content is researched, written, checked, and corrected. It applies to every article on the site.
 
 ## Sourcing standards
 

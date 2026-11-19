@@ -10,7 +10,7 @@ By using loopandstack.tech you agree to these terms. If you do not agree with th
 
 ## What this site is
 
-Loop and Stack publishes articles about tech tools for general information and education. We work to keep articles accurate and current, and our [Editorial Policy](/editorial-policy/) explains how. Even so, software, pricing, and features change quickly, and we cannot guarantee that every detail is accurate at the moment you read it. Always confirm pricing, plan limits, and terms on the vendor's own site before buying or relying on a tool.
+loop and stack publishes articles about tech tools for general information and education. We work to keep articles accurate and current, and our [Editorial Policy](/editorial-policy/) explains how. Even so, software, pricing, and features change quickly, and we cannot guarantee that every detail is accurate at the moment you read it. Always confirm pricing, plan limits, and terms on the vendor's own site before buying or relying on a tool.
 
 ## Not professional advice
 
@@ -22,7 +22,7 @@ This site contains affiliate links and advertising, which fund its operation. Se
 
 ## Intellectual property
 
-Original articles, the Loop and Stack name, and the site logo belong to Loop and Stack and are protected by copyright; all rights reserved. You may quote short excerpts for commentary or review if you credit Loop and Stack and link back to the original article. Product names, logos, and trademarks shown or mentioned in articles belong to their respective owners, are used for identification only, and do not imply endorsement.
+Original articles, the loop and stack name, and the site logo belong to loop and stack and are protected by copyright; all rights reserved. You may quote short excerpts for commentary or review if you credit loop and stack and link back to the original article. Product names, logos, and trademarks shown or mentioned in articles belong to their respective owners, are used for identification only, and do not imply endorsement.
 
 ## Acceptable use
 
@@ -34,7 +34,7 @@ Articles link to vendor and reference sites we do not control. We are not respon
 
 ## Liability
 
-Loop and Stack is provided as is, without warranties of any kind. To the extent permitted by law, we are not liable for losses arising from decisions made based on our articles or from the use of third-party products and services we write about.
+loop and stack is provided as is, without warranties of any kind. To the extent permitted by law, we are not liable for losses arising from decisions made based on our articles or from the use of third-party products and services we write about.
 
 ## Changes
 

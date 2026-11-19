@@ -6,7 +6,7 @@ permalink: /privacy/
 
 Last updated: November 20, 2026.
 
-This policy explains what information is collected when you visit Loop and Stack (loopandstack.tech), how it is used, and the choices you have. Loop and Stack is a static website: we run no user accounts, no comment system, and no contact forms, and we do not ask you for personal information to read the site.
+This policy explains what information is collected when you visit loop and stack (loopandstack.tech), how it is used, and the choices you have. loop and stack is a static website: we run no user accounts, no comment system, and no contact forms, and we do not ask you for personal information to read the site.
 
 ## Information collected automatically
 
