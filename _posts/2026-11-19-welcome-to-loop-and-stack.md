@@ -1,9 +1,9 @@
 ---
-layout: post
 title: "Welcome to Loop and Stack"
 date: 2026-11-19 23:40:00 +0700
-categories: announcements
-author: Loop and Stack Editorial
+categories: [Announcements]
+tags: [news]
+description: "Loop and Stack is live. Tech tools, reviewed and compared in plain English, one article every weekday."
 ---
 
 Loop and Stack is live.
