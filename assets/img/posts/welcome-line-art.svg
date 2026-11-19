@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Line art of a looping arrow around a stack of tools">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- dotted orbit -->
+    <circle cx="600" cy="315" r="248" stroke="#565f89" stroke-width="5" stroke-dasharray="2 18"/>
+    <!-- the stack: three layers -->
+    <g stroke="#7aa2f7" stroke-width="13">
+      <rect x="450" y="205" width="300" height="72" rx="18"/>
+      <rect x="450" y="292" width="300" height="72" rx="18"/>
+      <rect x="450" y="379" width="300" height="72" rx="18"/>
+    </g>
+    <g stroke="#7aa2f7" stroke-width="13">
+      <path d="M492 241 h60"/>
+      <path d="M492 328 h96"/>
+      <path d="M492 415 h60"/>
+    </g>
+    <g fill="#9ece6a">
+      <circle cx="700" cy="241" r="10"/>
+      <circle cx="700" cy="328" r="10"/>
+      <circle cx="700" cy="415" r="10"/>
+    </g>
+    <!-- the loop: arrow circling the stack -->
+    <path d="M330 180 a300 300 0 0 1 480 -60" stroke="#9ece6a" stroke-width="13"/>
+    <path d="M782 66 l34 58 -66 6 z" fill="#9ece6a" stroke="none"/>
+    <path d="M870 450 a300 300 0 0 1 -480 60" stroke="#9ece6a" stroke-width="13"/>
+    <path d="M418 564 l-34 -58 66 -6 z" fill="#9ece6a" stroke="none"/>
+    <!-- doodle gear, top right -->
+    <g stroke="#bb9af7" stroke-width="11">
+      <circle cx="985" cy="140" r="34"/>
+      <path d="M985 84 v22 M985 174 v22 M929 140 h22 M1019 140 h22 M945 100 l16 16 M1009 164 l16 16 M1025 100 l-16 16 M961 164 l-16 16"/>
+    </g>
+    <!-- doodle cursor, bottom left -->
+    <path d="M196 428 l64 26 -28 8 -12 26 z" stroke="#e0af68" stroke-width="11"/>
+    <!-- sparkles -->
+    <g stroke="#e0af68" stroke-width="9">
+      <path d="M238 168 v36 M220 186 h36"/>
+      <path d="M1010 420 v30 M995 435 h30"/>
+    </g>
+    <!-- small wrench, bottom right -->
+    <g stroke="#7dcfff" stroke-width="11">
+      <path d="M902 512 a26 26 0 1 1 30 -30 l-14 14 10 10 14 -14 a26 26 0 0 1 -30 30 z"/>
+      <path d="M884 530 l-42 42"/>
+    </g>
+  </g>
+</svg>
