@@ -16,7 +16,7 @@ timezone: Asia/Jakarta
 
 title: loop and stack # the main title
 
-tagline: AI and software tools, reviewed and compared # it will display as the subtitle
+tagline: all about the tools that power modern tech # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Reviews, comparisons, and practical tutorials on software, AI tools, dev tools, and security tools.
