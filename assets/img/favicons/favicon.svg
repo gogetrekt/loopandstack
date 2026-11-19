@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="44" fill="#16161e"/>
+  <!-- loop arrow around -->
+  <path d="M100 22 a78 78 0 1 1 -55 23" fill="none" stroke="#9ece6a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M28 30 l20 22 14 -24 z" fill="#9ece6a"/>
+  <!-- stack layers (chevrons) -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="13">
+    <path d="M58 76 L100 97 L142 76" stroke="#7dcfff"/>
+    <path d="M58 104 L100 125 L142 104" stroke="#7aa2f7"/>
+    <path d="M58 132 L100 153 L142 132" stroke="#bb9af7"/>
+  </g>
+</svg>
