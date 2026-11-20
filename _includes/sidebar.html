@@ -88,6 +88,10 @@
       {% endif %}
     {% endunless %}
 
+    <button type="button" class="btn btn-link nav-link" id="las-focus-toggle" aria-label="Focus reading" aria-pressed="false" title="Focus reading">
+      <i class="fa-solid fa-glasses"></i>
+    </button>
+
     {% for entry in site.data.contact %}
       {%- assign url = null -%}
 
@@ -140,3 +144,5 @@
   <!-- .sidebar-bottom -->
 </aside>
 <!-- #sidebar -->
+
+{% include focus-reading.html %}
