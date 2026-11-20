@@ -91,9 +91,10 @@ module LasOg
 
   def default_card(path)
     img = base_canvas
-    mark(img, 90, 165, 300, WHITE)
-    draw_text(img, 424, 240, "loop and stack", 4, WHITE)
-    draw_text(img, 428, 420, "all about the tools that power modern tech", 2, MUTED)
+    mark(img, 70, 190, 250, WHITE)
+    draw_text(img, 354, 218, "loop and stack", 3, WHITE)
+    draw_text(img, 358, 356, "all about the tools", 2, MUTED)
+    draw_text(img, 358, 438, "that power modern tech", 2, MUTED)
     img.save(path)
   end
 
