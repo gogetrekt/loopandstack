@@ -42,11 +42,11 @@ That day is gone from this device. Google is blunt about this: deleted Timeline 
 
 You can also delete a single stop instead of the whole day. Open the day, tap the three-dot menu next to one visit, and delete just that visit.
 
-![Timeline day view with the menu open, showing Delete day](/assets/img/posts/android-timeline-day-menu.svg){: width="350" }
-
 ## Delete a date range, or everything
 
 For a bigger cleanup, the Location and privacy settings page has the heavy tools.
+
+![The Timeline menu open, with Location & privacy settings one tap away](/assets/img/posts/android-timeline-day-menu.svg){: width="350" }
 
 1. Open **Your Timeline**.
 2. Tap the three-dot menu, then **Location & privacy settings**.
