@@ -124,6 +124,14 @@ layout: default
                     {% endfor %}
                   </span>
                 {% endif %}
+
+                {% if post.author %}
+                  {% assign card_author = site.data.authors[post.author] %}
+                  {% if card_author %}
+                    <span class="las-card-author"><i class="far fa-user fa-fw me-1"></i>{{ card_author.name }}</span>
+                  {% endif %}
+                {% endif %}
+                <span class="las-card-read"><i class="far fa-clock fa-fw me-1"></i>{{ post.content | number_of_words | divided_by: 200.0 | ceil }} min read</span>
               </div>
 
               {% if post.pin %}

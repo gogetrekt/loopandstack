@@ -1,0 +1,17 @@
+---
+layout: page
+title: "404: Page not found"
+permalink: /404.html
+sitemap: false
+---
+
+<div class="las-404">
+  <svg width="76" height="82" viewBox="-40 -40 827 887" role="img" aria-label="loop and stack logo"><rect x="348" y="0" width="55" height="247"/><rect x="348" y="560" width="55" height="247"/><rect x="0" y="388" width="247" height="51"/><rect x="500" y="388" width="247" height="51"/><circle cx="175.5" cy="191.5" r="35.5"/><circle cx="555.5" cy="191.5" r="35.5"/><circle cx="195.5" cy="615.5" r="35.5"/><circle cx="555.5" cy="615.5" r="35.5"/></svg>
+  <p class="las-404-text">That page does not exist, or it moved. The tool you are looking for is probably in one of these instead:</p>
+  <ul class="las-404-list">
+    {% for post in site.posts limit: 3 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/' | relative_url }}">Back to the homepage</a> · <a href="{{ '/archives/' | relative_url }}">Browse the archives</a></p>
+</div>

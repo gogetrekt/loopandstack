@@ -17,11 +17,11 @@ We are an independent publication about the tools that power modern tech. We rev
 
 Because the tool layer is where the money and the hours go, and it is oddly underserved. Vendor pages are written to sell, not to inform. Roundups on big sites are often refreshed in name only, with last year's findings under this year's date. Forums know the truth but bury it in threads nobody can find twice.
 
-Our answer is boring and strict: fewer topics, covered properly, updated when they change. One article every weekday, researched fresh that morning, with the sources linked at the end so you can check our work.
+Our answer is boring and strict: fewer topics, covered properly, updated when they change. Two articles every weekday, researched fresh that morning from primary sources, so you can check our work.
 
 ## What we cover
 
-Four beats, each with its own editor, so the person writing about a category actually lives in it.
+Six beats and five editors, so the person writing about a category actually lives in it.
 
 | Beat | Editor | What you will find |
 | --- | --- | --- |
@@ -29,6 +29,8 @@ Four beats, each with its own editor, so the person writing about a category act
 | Developer tools | Priya Nair | Editors, terminals, CI, hosting, and the tooling around shipping code |
 | Security tools | Tomas Silva | VPNs, password managers, and privacy software, tested against their own claims |
 | Software | Daniel Reyes | The everyday apps people work in, compared on price, limits, and fit |
+| Hardware | Elena Petrova | PC components, peripherals, and upgrades, benchmarked before they are recommended |
+| Mobile | Marcus Lee | Phones, Android and iOS, and the apps and settings people actually live with |
 
 Reviews and comparisons are the core, but not the whole site. Expect tutorials that use the current interface, explainers that translate a pricing page into plain numbers, and short news pieces when a tool changes something that matters.
 
@@ -70,7 +72,7 @@ One article every weekday. Updates to existing articles happen whenever a covere
 No. We do not accept sponsored reviews, paid placements, or review units with conditions. Vendors are welcome to flag factual errors, and we fix real ones.
 
 **Who writes the articles?**
-Three editors under editorial pen names, each on a fixed beat, listed on the [About](/about/) page. The byline on an article is the person accountable for its facts.
+Five editors under editorial pen names, each on a fixed beat, listed on the [About](/about/) page. The byline on an article is the person accountable for its facts.
 
 **Can I suggest a tool to cover?**
 Yes. Email nethroes@proton.me with the tool and, if you can, the question you are trying to answer. Reader questions are a regular source of comparisons.

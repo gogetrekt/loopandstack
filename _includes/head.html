@@ -182,6 +182,37 @@
     .las-latest { display: flex; align-items: center; gap: .6rem; }
     .las-latest::before { content: ""; width: .55rem; height: .55rem; border-radius: 2px; background: #9ece6a; flex: none; }
   </style>
+
+  <style id="las-people">
+    .las-author-card { display: flex; gap: 1rem; align-items: flex-start; border: 1px solid rgba(140,150,170,.25); border-radius: 14px; padding: 1.1rem 1.2rem; margin-top: 2.4rem; }
+    .las-author-avatar, .las-team-avatar { flex: none; width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.05rem; color: #1a1b26; background: #7aa2f7; }
+    .las-author-avatar[data-author="priya"], .las-team-avatar[data-author="priya"] { background: #bb9af7; }
+    .las-author-avatar[data-author="tomas"], .las-team-avatar[data-author="tomas"] { background: #9ece6a; }
+    .las-author-avatar[data-author="elena"], .las-team-avatar[data-author="elena"] { background: #e0af68; }
+    .las-author-avatar[data-author="marcus"], .las-team-avatar[data-author="marcus"] { background: #7dcfff; }
+    .las-author-label { font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; opacity: .55; font-weight: 700; }
+    .las-author-name { font-size: 1.12rem; font-weight: 750; margin-top: .1rem; }
+    .las-author-role { display: block; font-size: .82rem; font-weight: 600; opacity: .65; margin-top: .1rem; }
+    @media (min-width: 576px) { .las-author-role { display: inline; margin-left: .5rem; } }
+    .las-author-bio { margin: .45rem 0 0; font-size: .92rem; line-height: 1.55; opacity: .85; }
+    .las-team { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1.2rem; }
+    @media (min-width: 768px) { .las-team { grid-template-columns: 1fr 1fr; } }
+    .las-team-card { display: flex; gap: .95rem; align-items: flex-start; border: 1px solid rgba(140,150,170,.25); border-radius: 14px; padding: 1rem 1.1rem; }
+    .las-team-avatar { width: 48px; height: 48px; font-size: .95rem; }
+    .las-team-name { font-weight: 750; font-size: 1.05rem; }
+    .las-team-role { font-size: .8rem; font-weight: 600; opacity: .65; }
+    .las-team-card p { margin: .4rem 0 0; font-size: .9rem; line-height: 1.55; opacity: .85; }
+    .las-card-author, .las-card-read { margin-left: .9rem; white-space: nowrap; }
+    #related-posts .card .card-title { font-size: 1.12rem; font-weight: 700; line-height: 1.35; }
+    #related-posts .preview-img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+    @media (hover: hover) { #related-posts .card { transition: transform .18s ease; } #related-posts .card:hover { transform: translateY(-2px); } }
+    .las-404 { text-align: center; padding: 1rem 0 2rem; }
+    .las-404 svg { fill: var(--heading-color); margin-bottom: 1rem; }
+    .las-404-text { max-width: 34rem; margin: 0 auto 1.2rem; }
+    .las-404-list { list-style: none; padding: 0; margin: 0 auto 1.4rem; max-width: 34rem; }
+    .las-404-list li { padding: .45rem 0; border-bottom: 1px solid rgba(140,150,170,.18); }
+    .las-404-list li:last-child { border-bottom: 0; }
+  </style>
   <style id="las-polish">
     ::selection { background: rgba(158, 206, 106, .35); }
     #sidebar .site-title { font-weight: 800; letter-spacing: -0.01em; }
