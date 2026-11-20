@@ -7,14 +7,12 @@ description: "Google Maps Timeline keeps a day-by-day record of where your Andro
 author: daniel
 image:
   path: /assets/img/posts/android-phone-map-lead.svg
-  alt: "A hand holding a smartphone showing a navigation map"
+  alt: "A hand holding a smartphone showing a navigation map. Photo: Santeri Viinamaki via Wikimedia Commons, CC BY-SA, cropped."
 ---
 
 Your Android phone keeps a diary of where you go. Every visit, every route, every stop for coffee, saved day by day in Google Maps Timeline. If you turned it on at some point and forgot about it, that diary might stretch back years.
 
 Short version: open Timeline, look at what is there, and decide what stays. Set auto-delete to 3 months so old entries clear themselves, and check which apps hold location permission while you are at it. The whole cleanup takes about ten minutes.
-
-*Lead photo: Santeri Viinamaki via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Smartphone_with_navigation_map_app.jpg), CC BY-SA, cropped.*
 
 ## How to see your Timeline
 
