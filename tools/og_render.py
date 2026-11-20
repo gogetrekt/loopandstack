@@ -12,8 +12,25 @@ def ensure_pillow():
         import PIL  # noqa
         return
     except ImportError:
-        subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "pillow"], check=False)
-        import PIL  # noqa
+        pass
+    import importlib
+    attempts = [
+        [sys.executable, "-m", "pip", "install", "--quiet", "pillow"],
+        [sys.executable, "-m", "pip", "install", "--quiet", "--user", "pillow"],
+        [sys.executable, "-m", "pip", "install", "--quiet", "--break-system-packages", "pillow"],
+        [sys.executable, "-m", "pip", "install", "--quiet", "--user", "--break-system-packages", "pillow"],
+    ]
+    last = ""
+    for cmd in attempts:
+        r = subprocess.run(cmd, check=False, capture_output=True, text=True)
+        last = (r.stdout + r.stderr)[-300:]
+        importlib.invalidate_caches()
+        try:
+            import PIL  # noqa
+            return
+        except ImportError:
+            continue
+    raise RuntimeError("could not install pillow; last pip output: " + last)
 
 ensure_pillow()
 from PIL import Image, ImageDraw, ImageFont
