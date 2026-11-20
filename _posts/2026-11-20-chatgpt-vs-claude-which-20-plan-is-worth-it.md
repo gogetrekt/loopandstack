@@ -11,7 +11,6 @@ image:
 ---
 
 ![ChatGPT Plus versus Claude Pro](/assets/img/posts/chatgpt-vs-claude.svg)
-_Image: OpenAI and Claude logos via [Simple Icons](https://simpleicons.org), composited by loop and stack._
 
 ChatGPT Plus costs $20 a month. Claude Pro costs $20 a month. Same money, very different product, and picking the wrong one is an easy mistake to make.
 
