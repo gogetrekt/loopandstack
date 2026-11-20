@@ -22,9 +22,11 @@ Jekyll::Hooks.register :site, :post_write do |site|
     pyver, = Open3.capture2e("python3", "--version")
     pil, pil_status = Open3.capture2e("python3", "-c", "import PIL; print(PIL.__version__)")
     out, status = Open3.capture2e("python3", script, tmp)
+    magick, = Open3.capture2e("bash", "-c", "which magick convert rsvg-convert inkscape 2>/dev/null; magick --version 2>/dev/null | head -1; convert --version 2>/dev/null | head -1; rsvg-convert --version 2>/dev/null; fc-list 2>/dev/null | grep -ci dejavu; ls /usr/share/fonts/truetype/dejavu/ 2>/dev/null | head -4")
     lines = [
       "time: #{Time.now.utc}",
       "ruby: #{RUBY_VERSION}",
+      "gfx tools: #{magick.strip[0, 500]}",
       "python: #{pyver.strip}",
       "pil preinstalled: #{pil_status.success?} #{pil.strip}",
       "renderer success: #{status.success?}",
