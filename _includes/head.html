@@ -223,13 +223,15 @@
     .las-comments-title { display: flex; align-items: center; gap: .55rem; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; margin-top: 3.2rem; }
     .las-comments-title::before { content: ""; width: .62rem; height: .62rem; background: #9ece6a; border-radius: 2px; flex: none; }
     #las-comments { margin-top: 1rem; }
-    .las-404 { text-align: center; padding: 2.5rem 0 3rem; }
+    .las-404 { text-align: center; padding: 9vh 0 3rem; }
     .las-404 svg { fill: var(--heading-color); }
-    .las-404-code { font-size: 3.4rem; font-weight: 800; letter-spacing: -.02em; color: var(--heading-color); line-height: 1.1; margin-top: 1.2rem; }
-    .las-404-text { opacity: .8; margin: .6rem auto 1.6rem; }
-    .las-404-actions { display: flex; gap: .7rem; justify-content: center; flex-wrap: wrap; }
-    .las-404-btn { border: 1px solid rgba(140,150,170,.4); border-radius: 10px; padding: .55rem 1.1rem; font-weight: 600; text-decoration: none !important; }
-    .las-404-btn-main { background: var(--heading-color); color: var(--main-bg) !important; border-color: transparent; }
+    .las-404-code { font-family: 'VT323', monospace; font-size: 8rem; font-weight: 400; line-height: .95; letter-spacing: .01em; color: var(--heading-color); margin-top: 1.4rem; }
+    .las-404-text { font-size: 1.05rem; opacity: .8; margin: .8rem auto 1.8rem; }
+    .las-404-actions { display: flex; gap: 1.1rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+    .las-404-btn { font-weight: 600; text-decoration: underline !important; text-underline-offset: 4px; opacity: .85; padding: .65rem .2rem; }
+    .las-404-btn-main { background: #9ece6a; color: #1a1b26 !important; border: none; border-radius: 999px; padding: .65rem 1.5rem; font-weight: 700; text-decoration: none !important; opacity: 1; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
+    html[data-bs-theme="light"] .las-404-btn-main { background: #3d7a1e; color: #ffffff !important; }
+    @media (hover: hover) { .las-404-btn-main { transition: transform .15s ease, filter .15s ease; } .las-404-btn-main:hover { transform: translateY(-1px); filter: brightness(1.06); } .las-404-btn:hover { opacity: 1; } }
   </style>
   <style id="las-polish">
     ::selection { background: rgba(158, 206, 106, .35); }
