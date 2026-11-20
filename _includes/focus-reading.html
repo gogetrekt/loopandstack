@@ -1,0 +1,71 @@
+<script>
+(function () {
+  var KEY = 'las-focus-reading';
+  var btn = document.getElementById('las-focus-toggle');
+  var SKIP = { SCRIPT: 1, STYLE: 1, PRE: 1, CODE: 1, TEXTAREA: 1, H1: 1, H2: 1, H3: 1, H4: 1, H5: 1, H6: 1 };
+  function isPost() { return location.pathname.indexOf('/posts/') !== -1; }
+  function setBtn(on) { if (btn) { btn.classList.toggle('las-on', on); btn.setAttribute('aria-pressed', on ? 'true' : 'false'); } }
+  function skipNode(node) {
+    var el = node.parentElement;
+    while (el && !(el.classList && el.classList.contains('content'))) {
+      if (SKIP[el.tagName]) return true;
+      if (el.classList && (el.classList.contains('anchor') || el.classList.contains('las-fr-b'))) return true;
+      el = el.parentElement;
+    }
+    return false;
+  }
+  function boldCount(len) { if (len <= 2) return 1; return Math.ceil(len * 0.45); }
+  function transform(root) {
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        if (!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        return skipNode(n) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      var parts = node.nodeValue.split(/(\s+)/);
+      var frag = document.createDocumentFragment();
+      parts.forEach(function (part) {
+        if (!part) return;
+        var m = part.match(/^([^A-Za-zÀ-ÿ]*)([A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’-]*)([^A-Za-zÀ-ÿ]*)$/);
+        if (!m) { frag.appendChild(document.createTextNode(part)); return; }
+        if (m[1]) frag.appendChild(document.createTextNode(m[1]));
+        var n = boldCount(m[2].length);
+        var b = document.createElement('b');
+        b.className = 'las-fr-b';
+        b.textContent = m[2].slice(0, n);
+        frag.appendChild(b);
+        frag.appendChild(document.createTextNode(m[2].slice(n)));
+        if (m[3]) frag.appendChild(document.createTextNode(m[3]));
+      });
+      if (node.parentNode) node.parentNode.replaceChild(frag, node);
+    });
+  }
+  function untransform(root) {
+    root.querySelectorAll('b.las-fr-b').forEach(function (b) { b.replaceWith(document.createTextNode(b.textContent)); });
+    root.normalize();
+  }
+  function apply(on) {
+    var content = document.querySelector('article .content');
+    if (content) { if (on) transform(content); else untransform(content); }
+    setBtn(on);
+  }
+  var on = false;
+  try { on = localStorage.getItem(KEY) === 'on'; } catch (e) {}
+  if (btn) {
+    btn.addEventListener('click', function () {
+      on = !on;
+      try { localStorage.setItem(KEY, on ? 'on' : 'off'); } catch (e) {}
+      apply(on);
+    });
+  }
+  if (on && isPost()) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { apply(true); });
+    else apply(true);
+  } else {
+    setBtn(on);
+  }
+})();
+</script>
