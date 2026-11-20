@@ -8,6 +8,7 @@ author: daniel
 image:
   path: /assets/img/posts/android-phone-map-lead.svg
   alt: "A hand holding a smartphone showing a navigation map. Photo: Santeri Viinamaki via Wikimedia Commons, CC BY-SA, cropped."
+og_image: /assets/og/your-android-phone-is-tracking-everywhere-you-go.png
 ---
 
 Your Android phone keeps a diary of where you go. Every visit, every route, every stop for coffee, saved day by day in Google Maps Timeline. If you turned it on at some point and forgot about it, that diary might stretch back years.

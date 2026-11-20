@@ -7,6 +7,7 @@ description: "loop and stack is an independent publication about the tools that 
 image:
   path: /assets/img/posts/welcome-line-art.svg
   alt: "Line art of a looping arrow around a stack of tools"
+og_image: /assets/og/welcome-to-loop-and-stack.png
 ---
 
 Every job in tech runs on a stack of tools, and the stack never sits still. Plans change, prices move, a feature that sold you on a product gets deprecated, and the comparison article you trusted was written two versions ago. loop and stack exists to keep up with that loop, so you do not have to.
