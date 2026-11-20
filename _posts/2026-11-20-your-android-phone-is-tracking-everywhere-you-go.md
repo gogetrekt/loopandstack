@@ -26,7 +26,7 @@ Timeline lives inside Google Maps, and it needs Maps version 11.106 or newer. It
 
 You get a map and a day-by-day list of places you visited and routes you took. Tap any day on the calendar to see that day in detail. The tabs at the top (Places, Cities, World) give you the highlight reel if you want the big picture instead of the daily log.
 
-![Google Maps profile menu with Your Timeline](/assets/img/posts/android-timeline-open-menu.svg)
+![Google Maps profile menu with Your Timeline](/assets/img/posts/android-timeline-open-menu.svg){: width="350" }
 
 One thing worth knowing before you start deleting: Timeline is off by default and only records if you opt in. If your Timeline is empty, it was never turned on, and you can skip straight to the app permissions section below.
 
@@ -42,7 +42,7 @@ That day is gone from this device. Google is blunt about this: deleted Timeline 
 
 You can also delete a single stop instead of the whole day. Open the day, tap the three-dot menu next to one visit, and delete just that visit.
 
-![Timeline day view with the menu open, showing Delete day](/assets/img/posts/android-timeline-day-menu.svg)
+![Timeline day view with the menu open, showing Delete day](/assets/img/posts/android-timeline-day-menu.svg){: width="350" }
 
 ## Delete a date range, or everything
 
@@ -52,7 +52,7 @@ For a bigger cleanup, the Location and privacy settings page has the heavy tools
 2. Tap the three-dot menu, then **Location & privacy settings**.
 3. Pick **Delete range of Timeline data** to wipe a stretch of dates, or **Delete all Timeline data** to start from zero.
 
-![Location and privacy settings with Delete all Timeline data, Delete range, and Auto-delete options](/assets/img/posts/android-timeline-privacy-settings.svg)
+![Location and privacy settings with Delete all Timeline data, Delete range, and Auto-delete options](/assets/img/posts/android-timeline-privacy-settings.svg){: width="350" }
 
 Three catches. The delete only covers this device, and your backups are separate. Turning Timeline off does not erase what is already saved, you have to delete it separately. And other Google settings, like Web and App Activity, can still hold your general area from your IP address even after Timeline is clean.
 
@@ -84,7 +84,7 @@ Timeline is only half the story. The other half is the apps on your phone, and t
 
 Open **Settings**, tap **Location**, and look at the **App location permissions** row. It tells you straight up how many apps have access. On the phone in the screenshot below, 17 of 38 apps had location access.
 
-![Android Location settings showing recent access and App location permissions](/assets/img/posts/android-location-settings.svg)
+![Android Location settings showing recent access and App location permissions](/assets/img/posts/android-location-settings.svg){: width="350" }
 
 Tap **App location permissions** to see the full list, grouped by how much access each app has. Tap any app to change it. You get four choices:
 
@@ -93,7 +93,7 @@ Tap **App location permissions** to see the full list, grouped by how much acces
 - **Ask every time.** The app has to ask on each use. Good for apps you use rarely.
 - **Don't allow.** No location at all. Most apps still work fine without it.
 
-![Per-app location permission screen with Allow all the time, Allow only while using the app, Ask every time, and Don't allow options](/assets/img/posts/android-app-location-permission.svg)
+![Per-app location permission screen with Allow all the time, Allow only while using the app, Ask every time, and Don't allow options](/assets/img/posts/android-app-location-permission.svg){: width="350" }
 
 *Screenshot: Vodafone UK device guide.*
 
