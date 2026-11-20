@@ -6,13 +6,15 @@ tags: [android, google-maps, timeline, location-history, privacy, how-to]
 description: "Google Maps Timeline keeps a day-by-day record of where your Android phone has been. Here is how to see it, delete a day or all of it, and stop it from recording."
 author: daniel
 image:
-  path: /assets/img/posts/android-timeline-lead.svg
-  alt: "Google Maps Timeline on an Android phone"
+  path: /assets/img/posts/android-phone-map-lead.svg
+  alt: "A hand holding a smartphone showing a navigation map"
 ---
 
 Your Android phone keeps a diary of where you go. Every visit, every route, every stop for coffee, saved day by day in Google Maps Timeline. If you turned it on at some point and forgot about it, that diary might stretch back years.
 
 Short version: open Timeline, look at what is there, and decide what stays. Set auto-delete to 3 months so old entries clear themselves, and check which apps hold location permission while you are at it. The whole cleanup takes about ten minutes.
+
+*Lead photo: Santeri Viinamaki via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Smartphone_with_navigation_map_app.jpg), CC BY-SA, cropped.*
 
 ## How to see your Timeline
 
@@ -52,7 +54,7 @@ For a bigger cleanup, the Location and privacy settings page has the heavy tools
 
 ![Location and privacy settings with Delete all Timeline data, Delete range, and Auto-delete options](/assets/img/posts/android-timeline-privacy-settings.svg)
 
-Three catches apply here. First, the delete only covers this device. If you edit or delete Timeline data on one phone, it does not carry over to your other devices, and your backups are separate too. Second, turning Timeline off does not erase what is already saved. You have to delete it separately. Third, other Google settings can still hold location data of their own. Web and App Activity and Search Services History may include your general area and IP address even after Timeline is clean, so check those in your Google Account if you want a full sweep.
+Three catches. The delete only covers this device, and your backups are separate. Turning Timeline off does not erase what is already saved, you have to delete it separately. And other Google settings, like Web and App Activity, can still hold your general area from your IP address even after Timeline is clean.
 
 ## Set auto-delete so you never have to do this again
 
@@ -113,13 +115,9 @@ Back in **Settings > Location > Location services**, there are two more switches
 
 Turning Wi-Fi and Bluetooth scanning off costs you some indoor and city accuracy, and maps may take longer to lock on. That is the trade. If you want location to work well, leave them on and control the apps instead. If you want the tightest setup, switch them off along with Location Accuracy and accept that navigation gets a little slower to find you.
 
-## What this cleanup does not cover
-
-Clearing Timeline and tightening permissions is a big step, but it is not total. Your photos may still carry GPS coordinates in their metadata, depending on your camera app settings. Your carrier always knows roughly where your phone is, and no setting changes that. And Google services can still log your general area through your IP address and search activity. Privacy on a phone is layers, not one switch, but Timeline and app permissions are the two layers that matter most, and now both are under your control.
-
 ## Bottom line
 
-Open Timeline today and look at it once. Most people are surprised by how much is in there. Delete what you do not want, set auto-delete to 3 months, then spend two minutes demoting apps from "all the time" to "while using the app" and switching the rest to approximate location. Ten minutes now, and your phone stops keeping a diary you never asked to write.
+Open Timeline today and look at it once. Most people are surprised by how much is in there. Delete what you do not want, set auto-delete to 3 months, then spend two minutes demoting apps from "all the time" to "while using the app" and switching the rest to approximate location. Ten minutes now, and your phone stops keeping a diary you never asked to write. It is not total privacy, your photos can still carry GPS metadata and your carrier still sees your phone, but Timeline and app permissions are the two layers that matter most.
 
 ## Keep reading
 
