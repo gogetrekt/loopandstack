@@ -155,4 +155,39 @@
     #post-list .card:hover .col-md-5 img { transform: scale(1.045); }
     #post-list .card-title a, #post-list a.post-preview { text-decoration: none; }
   </style>
+  <style id="las-polish-2">
+    /* content images: finished look, not pasted-in */
+    .content img, .post-content img { border-radius: .8rem; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+    .content figcaption, .post-content figcaption { font-size: .85rem; opacity: .75; margin-top: .4rem; }
+    /* article rhythm */
+    .post-content p { line-height: 1.78; }
+    .post-content h2 { margin-top: 2.2rem; letter-spacing: -0.01em; }
+    .post-content h3 { margin-top: 1.7rem; }
+    .post-content blockquote { border-left: 3px solid #9ece6a; background: rgba(158,206,106,.06); border-radius: 0 .6rem .6rem 0; padding: .6rem 1rem; }
+    .post-content pre { border-radius: .8rem; font-size: .86rem; }
+    .post-content code { border-radius: .35rem; }
+    .table-wrapper > table { font-size: .93rem; }
+    /* tap targets */
+    .pagination .page-link { min-height: 44px; min-width: 44px; display: flex; align-items: center; justify-content: center; }
+    .post-tag { min-height: 34px; display: inline-flex; align-items: center; }
+    @media (hover: none) {
+      #post-list .card:hover { transform: none; }
+      #post-list .card:hover .col-md-5 img { transform: none; }
+    }
+    /* mobile pass */
+    @media (max-width: 767.98px) {
+      #post-list .card { border-radius: 1rem; margin-bottom: 1.15rem; box-shadow: 0 5px 14px rgba(0,0,0,.18); }
+      #post-list .card-title { font-size: 1.13rem; line-height: 1.35; }
+      #post-list .card-text { font-size: .92rem; }
+      .post-content { font-size: 1.01rem; }
+      .post-content h1, article h1 { font-size: 1.72rem; line-height: 1.25; }
+      .post-content h2 { font-size: 1.38rem; margin-top: 1.9rem; }
+      .post-content h3 { font-size: 1.16rem; }
+      .post-content img { border-radius: .7rem; }
+      .post-content pre { font-size: .8rem; border-radius: .6rem; }
+      header .post-desc { font-size: .98rem; }
+      #toc-bar { font-size: .9rem; }
+      .post-tail-wrapper { font-size: .92rem; }
+    }
+  </style>
 </head>
