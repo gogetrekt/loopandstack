@@ -12,7 +12,7 @@ This policy explains what information is collected when you visit loop and stack
 
 Like almost every website, the infrastructure that serves this site (GitHub Pages) may process standard technical information such as your IP address, browser type, and the pages requested, in server logs used to operate and secure the service. GitHub's handling of that data is covered by GitHub's own privacy statement.
 
-If we use analytics, it is limited to aggregated page view statistics. We do not build profiles of individual visitors, and we do not sell personal data to anyone.
+We use Google Analytics, delivered through Google Tag Manager, to understand which articles get read and how visitors arrive here. It works with aggregated statistics and sets cookies that measure visits rather than identify you personally. We do not build profiles of individual visitors, and we do not sell personal data to anyone. You can opt out with the Google Analytics opt-out browser add-on.
 
 ## Advertising and cookies
 
