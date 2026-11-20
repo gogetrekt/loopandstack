@@ -3,73 +3,78 @@ title: "ChatGPT vs Claude: Which $20 Plan Is Worth It?"
 date: 2026-11-20 08:50:00 +0700
 categories: [AI Tools]
 tags: [chatgpt, claude, ai-assistants, pricing, comparison]
-description: "ChatGPT Plus and Claude Pro both cost $20 a month. We checked every tier on both pricing pages on 20 November 2026 to see what that money actually buys."
+description: "ChatGPT Plus and Claude Pro both cost $20 a month, but your money buys very different things. Here is which one to pick based on how you actually work."
 author: daniel
+image:
+  path: /assets/img/posts/chatgpt-vs-claude.svg
+  alt: "ChatGPT Plus versus Claude Pro"
 ---
 
-Both of the big AI chatbots now charge exactly $20 a month for their standard paid plan. ChatGPT Plus is $20. Claude Pro is $20. The price tells you nothing, because the $20 buys different things on each side, and the gap widens the more you use them.
+![ChatGPT Plus versus Claude Pro](/assets/img/posts/chatgpt-vs-claude.svg)
 
-We checked both pricing pages on 20 November 2026, plus Anthropic's November release notes, so every price and model name below is current as of this morning. Pick Claude Pro if you write code or work with long documents. Pick ChatGPT Plus if you want one assistant for everyday tasks, images, and voice chats. Either plan is easy to justify. The mistake is paying $20 for the one that does not match how you spend your hours. That is how every article here gets made: primary sources first, prices checked on the day of publication. The full method is in our [welcome post](/posts/welcome-to-loop-and-stack/).
+ChatGPT Plus costs $20 a month. Claude Pro costs $20 a month. Same money, very different product, and picking the wrong one is an easy mistake to make.
 
-## Every plan, side by side
+Short version: get Claude Pro if you write code or spend your day inside long documents. Get ChatGPT Plus if you want one assistant that does a bit of everything, including images and voice. Here is the full breakdown.
+
+## The plans, side by side
 
 | Plan | ChatGPT | Claude |
 | --- | --- | --- |
 | Free | $0 | $0 |
 | Cheapest paid | Go, $8 a month | Pro, $20 a month |
-| Standard paid | Plus, $20 a month | Pro, $20 a month, or $17 a month on annual billing ($200 up front) |
-| Heavy use | Pro, $100, $200 or $500 a month | Max, $100 a month; Ultra, $200 a month |
+| Standard paid | Plus, $20 a month | Pro, $20 a month, or $17 a month billed annually |
+| Heavy use | Pro, $100, $200, or $500 a month | Max, $100 a month; Ultra, $200 a month |
 | Team seat | Business, $20 a user a month annual, $25 monthly | Team Standard, $20 a seat a month annual, $25 monthly |
 | Enterprise | Custom quote | $20 a seat a month plus usage at API rates |
 
-Three things in that table decide most purchases. First, ChatGPT has a cheaper on-ramp: Go at $8 a month, a tier Claude simply does not sell. Second, Claude is the only one of the two that discounts its $20 plan, $200 up front for a year instead of $240. Third, the top of the ladder costs the same on both sides, $100 and $200 a month, so heavy users choose on features rather than price.
+Three rows in that table matter more than the rest.
 
-## What $20 buys on ChatGPT Plus
+ChatGPT has a cheap on-ramp and Claude does not. The $8 Go tier is great if you want a paid plan without committing to $20.
 
-Plus is built around GPT-6, the model that runs everyday chats on every plan, with advanced reasoning switched on. You get expanded message and upload limits, stronger image creation, expanded deep research, longer memory and context, Projects, scheduled tasks, custom GPTs, and expanded Codex usage for coding. Since 17 November, Plus also gets GPT-6.2 Astra inside ChatGPT Work and Codex, which brings the current flagship model family down a tier.
+Claude is the only one that discounts the $20 plan. Pay for a year up front and Pro works out to $17 a month, $200 instead of $240.
 
-What Plus does not include is the full flagship in chat. GPT-6 Pro, powered by GPT-6 Astra, is reserved for Pro, Business, and Enterprise in chat. OpenAI announced GPT-6 Astra on 3 September 2026 as its most intelligent model. Plus also has no annual billing option. OpenAI bills Go, Plus, and Pro monthly only, so the $20 is $240 a year, every year.
+At the top end, both sides charge $100 and $200 a month, so heavy users should pick on features, not price.
 
-## What $20 buys on Claude Pro
+## What ChatGPT Plus gets you
 
-Pro is built around Sonnet 4.6, which Anthropic shipped on 8 November and made the default model in claude.ai and Claude Cowork on Free and Pro. Sonnet 4.6 carries a 1M token context window in beta, at the same $3 per million input tokens and $15 per million output tokens as Sonnet 4.5. A million tokens holds a whole codebase or a stack of long documents in one conversation, and that is the practical difference Pro owners notice first.
+Plus runs on GPT-6 for everyday chats, with advanced reasoning turned on. You get higher message and upload limits, better image creation, deeper research runs, longer memory, Projects, scheduled tasks, custom GPTs, and extra Codex usage for coding. Since 17 November, Plus members also get GPT-6.2 Astra inside ChatGPT Work and Codex ([details at AI Toolbox](https://www.ai-toolbox.co/chatgpt-models/chatgpt-pricing)).
 
-Pro also includes Claude Code, Anthropic's coding tool, with no separate subscription. It shares your plan's usage pool with chat, so terminal sessions and conversations draw from the same allowance. Pro adds Projects, scheduled tasks, more models, and Claude in Chrome and Microsoft 365. The top model, Fable 5.2, is available on Pro through usage credits rather than included, so occasional Fable use costs extra. Fable 5.2 launched on 9 November with output up to 30% faster than Fable 5.1 and API pricing of $8 per million input tokens and $40 per million output tokens, down from $10 and $50.
+What you do not get is the best model in regular chat. GPT-6 Pro stays locked to the Pro, Business, and Enterprise plans. Plus is also monthly billing only, so that $20 is $240 a year, every year, with no way to pay less.
 
-Pay annually and Pro drops to $17 a month, $200 up front. That $40 a year saving is the only discount in this whole comparison.
+## What Claude Pro gets you
 
-## The free tiers are not equal either
+Pro runs on Sonnet 4.6, which became the default model on Free and Pro earlier this month. Its headline feature is a 1M token context window, currently in beta. In plain terms, you can hand Claude an entire codebase or a stack of long documents in one conversation and it holds together. If your work looks like that, this is the single biggest difference between the two plans.
 
-ChatGPT Free now includes unlimited text chats with GPT-6, subject to abuse guardrails, with limited uploads, image creation, voice chats, deep research, memory, and Codex access. It is a genuinely usable free tier for everyday questions, and it is the reason many people never need to pay at all.
+You also get Claude Code included, with no separate subscription. It shares the same usage pool as your chats, so a heavy terminal session eats into the same allowance, but there is nothing extra to pay for. Projects, scheduled tasks, Claude in Chrome and Microsoft 365 are all in too.
 
-Claude Free is more limited: usage caps reset every five hours and every week, and the heaviest models sit behind the paid plans. It still includes web search, file creation, code execution, memory across conversations, connectors, and Artifacts. For trying Claude out, it is enough. For daily work, it runs out.
+One catch: the top model, Fable 5.2, is not fully included. On Pro you reach it through usage credits, so heavy Fable use costs extra on top of your $20.
 
-## Spending $100 or $200 a month
+## The free plans are not equal
 
-Both vendors sell a $100 tier and a $200 tier, and both aim them at people who hit the $20 limits every week.
+Plenty of people should pay nothing at all.
 
-On Claude, Max is $100 a month for five times Pro's usage, Fable included up to half your weekly limit, and $100 a month in API credits. Ultra is $200 a month for ten times Pro's weekly usage, no five-hour limit for verified accounts, and $200 a month in API credits. The API credits matter: they are real money toward building on the Claude Platform, not just more chat.
+ChatGPT Free now includes unlimited text chats with GPT-6, with limits on uploads, image creation, voice, deep research, and memory. For everyday questions, it is genuinely enough, and it is the main reason lots of people never upgrade.
 
-On ChatGPT, Pro comes in three tiers, $100, $200, or $500 a month, with GPT-6 Pro reasoning in chat, longer Codex and ChatGPT Work sessions, Dot, the always-on agent, unlimited and faster image creation, and API credits that match the tier, $100, $200, or $500 a month. The $500 tier has no Claude equivalent; nobody at Claude sells a personal plan that high.
+Claude Free is tighter. Usage caps reset every five hours and weekly, and the biggest models sit behind the paid plans. You still get web search, file creation, code execution, memory, connectors, and Artifacts, which is plenty for a test drive, but daily drivers will hit the ceiling fast.
 
-## Teams: a draw on price, a split on control
+## Got $100 or $200 to spend?
 
-A two-person team pays the same on both sides: $20 a seat a month on annual billing, $25 on monthly billing. Claude Team adds a Premium seat at $100 a seat a month annual ($125 monthly) for heavier users, and ChatGPT Business matches that with its own Premium seat at the same prices. Both include admin controls, central billing, and no training on your data by default.
+Both companies sell $100 and $200 tiers aimed at people who burn through the $20 limits every week.
 
-Enterprise is where the pricing models diverge. Claude Enterprise is a published $20 a seat a month plus usage billed at API rates. ChatGPT Enterprise is a custom quote. If you want a number you can budget against without calling sales, Claude publishes one and OpenAI does not.
+Claude Max at $100 gives you five times Pro's usage, Fable access up to half your weekly limit, and $100 a month in API credits. Ultra at $200 gives you ten times the weekly usage and $200 in API credits. Those credits are real money toward building on Claude's platform, not just extra chat time.
 
-## Who should buy which
+ChatGPT Pro comes in three flavors, $100, $200, and $500 a month, with GPT-6 Pro reasoning in chat, longer Codex and ChatGPT Work sessions, the always-on Dot agent, unlimited faster image creation, and API credits that match what you pay. The $500 tier has no Claude equivalent at all.
 
-**Buy Claude Pro if** you write code, review code, or work with long documents. Claude Code in the $20 plan, the 1M token context on Sonnet 4.6, and the annual discount make it the better $20 for that work.
+## Using it for a team?
 
-**Buy ChatGPT Plus if** you want one assistant for everything else: everyday questions, image creation, voice chats, custom GPTs, and scheduled tasks. It is the broader general-purpose plan, and the $8 Go tier gives you a cheaper way in if $20 feels like too much for occasional use.
+A two-person team pays the same either way: $20 a seat a month on annual billing, $25 monthly. Both sides also sell a Premium seat at $100 a seat annual for heavy users, and both include admin controls, central billing, and no training on your data by default.
 
-**Buy neither if** you chat a few times a week and nothing more. ChatGPT Free covers that with unlimited GPT-6 text chats, and Claude Free is enough to test whether you prefer its answers. Pay when you hit a limit, not before.
+Enterprise is where they split. Claude publishes its price, $20 a seat a month plus usage at API rates. OpenAI wants you to call sales for a custom quote. If you need a number for a budget without a sales call, Claude is the easier buy.
 
-## Sources
+## So, which $20 should you spend?
 
-- Anthropic, Claude plans and pricing, checked 20 November 2026: <https://claude.com/pricing>
-- OpenAI, ChatGPT plans and pricing, checked 20 November 2026: <https://chatgpt.com/pricing>
-- Anthropic, Claude Platform release notes, November 2026 (Fable 5.2 launch, 9 November 2026): <https://docs.claude.com/en/release-notes/overview?entry=november-2-2026>
-- Anthropic, Models page (Sonnet 4.6, Opus 5.5, Haiku 5.5): <https://www.anthropic.com/news/models>
-- AI Toolbox, ChatGPT Pricing (October 2026), checked against OpenAI's pricing page and Help Center (GPT-6 Astra announcement date, Plus access to GPT-6.2 Astra): <https://www.ai-toolbox.co/chatgpt-models/chatgpt-pricing>
+**Buy Claude Pro** if you write or review code, or work with long documents all day. Claude Code in the plan, the huge context window, and the annual discount make it the better $20 for that kind of work.
+
+**Buy ChatGPT Plus** if you want one assistant for everything else: questions, images, voice chats, custom GPTs, scheduled tasks. It is the broader plan, and the $8 Go tier gives you a cheaper way in.
+
+**Buy neither** if you only chat a few times a week. ChatGPT Free covers that easily, and Claude Free is enough to find out which answers you like better. Upgrade the first time you hit a limit, not before.
