@@ -1,11 +1,11 @@
 daniel:
   name: Daniel Reyes
   role: AI Tools and Software Editor
-  bio: Covers AI assistants, writing and productivity software, and SaaS pricing. Writes the comparisons and best-of lists.
+  bio: Covers AI assistants and the everyday software people work in. Compares plans line by line, so the limits buried in pricing pages are clear before you pay.
 priya:
   name: Priya Nair
   role: Developer Tools Editor
-  bio: Covers editors, terminals, automation platforms, and anything that ships code. Writes the hands-on tutorials.
+  bio: Covers editors, terminals, CI, and hosting. Every tutorial is run end to end on a clean setup before it is published, with the failures left in.
 tomas:
   name: Tomas Silva
   role: Security Tools Editor
@@ -13,8 +13,12 @@ tomas:
 elena:
   name: Elena Petrova
   role: Hardware Editor
-  bio: Covers PC hardware, components, and peripherals. Benchmarks the gear and only recommends what earns its price.
+  bio: Covers PC hardware, components, and peripherals. Benchmarks every pick and checks street prices, so a recommendation still holds up at checkout.
 marcus:
   name: Marcus Lee
   role: Mobile Editor
-  bio: Covers phones, Android and iOS, and the apps people live in. Tracks the updates and settings that actually matter.
+  bio: Covers Android, iOS, and the apps people live in. Follows the changelogs, and flags the settings and permissions that are worth changing on your own phone.
+jonas:
+  name: Jonas Weber
+  role: Linux and Open Source Editor
+  bio: Covers Linux distributions, open source software, and self-hosting. Installs and configures everything from scratch for each guide, then writes down the steps that actually worked.

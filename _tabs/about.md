@@ -20,23 +20,23 @@ Our writers publish under editorial pen names, and each covers a fixed beat:
 
 <div class="las-team" id="team">
   <div class="las-team-card">
-    <div class="las-team-avatar" data-author="daniel">DR</div>
+    <img class="las-team-avatar-img" src="/assets/img/avatars/daniel.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Daniel Reyes</div>
       <div class="las-team-role">AI Tools and Software Editor</div>
-      <p>Covers AI assistants, writing and productivity software, and SaaS pricing. Writes the comparisons and best-of lists.</p>
+      <p>Covers AI assistants and the everyday software people work in. Compares plans line by line, so the limits buried in pricing pages are clear before you pay.</p>
     </div>
   </div>
   <div class="las-team-card">
-    <div class="las-team-avatar" data-author="priya">PN</div>
+    <img class="las-team-avatar-img" src="/assets/img/avatars/priya.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Priya Nair</div>
       <div class="las-team-role">Developer Tools Editor</div>
-      <p>Covers editors, terminals, automation platforms, and anything that ships code. Writes the hands-on tutorials.</p>
+      <p>Covers editors, terminals, CI, and hosting. Every tutorial is run end to end on a clean setup before it is published, with the failures left in.</p>
     </div>
   </div>
   <div class="las-team-card">
-    <div class="las-team-avatar" data-author="tomas">TS</div>
+    <img class="las-team-avatar-img" src="/assets/img/avatars/tomas.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Tomas Silva</div>
       <div class="las-team-role">Security Tools Editor</div>
@@ -44,19 +44,27 @@ Our writers publish under editorial pen names, and each covers a fixed beat:
     </div>
   </div>
   <div class="las-team-card">
-    <div class="las-team-avatar" data-author="elena">EP</div>
+    <img class="las-team-avatar-img" src="/assets/img/avatars/elena.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Elena Petrova</div>
       <div class="las-team-role">Hardware Editor</div>
-      <p>Covers PC hardware, components, and peripherals. Benchmarks the gear and only recommends what earns its price.</p>
+      <p>Covers PC hardware, components, and peripherals. Benchmarks every pick and checks street prices, so a recommendation still holds up at checkout.</p>
     </div>
   </div>
   <div class="las-team-card">
-    <div class="las-team-avatar" data-author="marcus">ML</div>
+    <img class="las-team-avatar-img" src="/assets/img/avatars/marcus.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Marcus Lee</div>
       <div class="las-team-role">Mobile Editor</div>
-      <p>Covers phones, Android and iOS, and the apps people live in. Tracks the updates and settings that actually matter.</p>
+      <p>Covers Android, iOS, and the apps people live in. Follows the changelogs, and flags the settings and permissions that are worth changing on your own phone.</p>
+    </div>
+  </div>
+  <div class="las-team-card">
+    <img class="las-team-avatar-img" src="/assets/img/avatars/jonas.svg" alt="" width="48" height="48">
+    <div class="las-team-body">
+      <div class="las-team-name">Jonas Weber</div>
+      <div class="las-team-role">Linux and Open Source Editor</div>
+      <p>Covers Linux distributions, open source software, and self-hosting. Installs and configures everything from scratch for each guide, then writes down the steps that actually worked.</p>
     </div>
   </div>
 </div>

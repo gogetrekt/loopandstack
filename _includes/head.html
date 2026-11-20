@@ -203,9 +203,22 @@
     .las-team-role { font-size: .8rem; font-weight: 600; opacity: .65; }
     .las-team-card p { margin: .4rem 0 0; font-size: .9rem; line-height: 1.55; opacity: .85; }
     .las-card-author, .las-card-read { margin-left: .9rem; white-space: nowrap; }
-    #related-posts .card .card-title { font-size: 1.12rem; font-weight: 700; line-height: 1.35; }
-    #related-posts .preview-img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
-    @media (hover: hover) { #related-posts .card { transition: transform .18s ease; } #related-posts .card:hover { transform: translateY(-2px); } }
+    .las-author-avatar-img, .las-team-avatar-img { flex: none; border-radius: 14px; border: 1px solid rgba(140,150,170,.3); }
+    .las-team-avatar-img { width: 48px; height: 48px; }
+    #related-posts .panel-heading { display: flex; align-items: center; gap: .55rem; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; }
+    #related-posts .panel-heading::before { content: ""; width: .62rem; height: .62rem; background: #9ece6a; border-radius: 2px; flex: none; }
+    #related-posts .post-preview { border: 1px solid rgba(140,150,170,.22) !important; border-radius: 14px !important; box-shadow: 0 1px 3px rgba(10,12,20,.06); }
+    #related-posts .post-preview h4 { font-size: 1.08rem; font-weight: 700; line-height: 1.35; }
+    @media (hover: hover) { #related-posts .post-preview { transition: transform .18s ease, box-shadow .18s ease; } #related-posts .post-preview:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(10,12,20,.13); } }
+    .post-navigation { gap: 1rem; margin-top: 1rem; }
+    .post-navigation .btn { flex: 1 1 0; border: 1px solid rgba(140,150,170,.3) !important; border-radius: 14px !important; padding: .9rem 1.1rem !important; text-align: left; background: transparent !important; box-shadow: 0 1px 3px rgba(10,12,20,.06); }
+    .post-navigation .btn::before { display: block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; opacity: .55; margin-bottom: .3rem; }
+    .post-navigation .btn:first-child::before { content: "Older post"; }
+    .post-navigation .btn:last-child::before { content: "Newer post"; }
+    .post-navigation .btn:last-child { text-align: right; }
+    .post-navigation .btn p { margin: 0; font-size: 1.02rem; font-weight: 700; line-height: 1.35; color: var(--heading-color); white-space: normal; }
+    .post-navigation .btn.disabled { opacity: .35; box-shadow: none; }
+    @media (hover: hover) { .post-navigation .btn:not(.disabled) { transition: transform .18s ease, box-shadow .18s ease; } .post-navigation .btn:not(.disabled):hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10,12,20,.12); } }
     .las-404 { text-align: center; padding: 1rem 0 2rem; }
     .las-404 svg { fill: var(--heading-color); margin-bottom: 1rem; }
     .las-404-text { max-width: 34rem; margin: 0 auto 1.2rem; }

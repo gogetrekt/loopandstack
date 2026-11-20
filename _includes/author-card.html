@@ -1,7 +1,7 @@
 {% assign las_author = site.data.authors[page.author] %}
 {% if las_author %}
   <div class="las-author-card">
-    <div class="las-author-avatar" data-author="{{ page.author }}">{{ las_author.name | split: ' ' | first | slice: 0 }}{{ las_author.name | split: ' ' | last | slice: 0 }}</div>
+    <img class="las-author-avatar-img" src="{{ '/assets/img/avatars/' | append: page.author | append: '.svg' | relative_url }}" alt="" width="54" height="54">
     <div class="las-author-body">
       <div class="las-author-label">Written by</div>
       <div class="las-author-name">{{ las_author.name }} <span class="las-author-role">{{ las_author.role }}</span></div>

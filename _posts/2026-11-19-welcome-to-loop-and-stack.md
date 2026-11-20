@@ -21,7 +21,7 @@ Our answer is boring and strict: fewer topics, covered properly, updated when th
 
 ## What we cover
 
-Six beats and five editors, so the person writing about a category actually lives in it.
+Seven beats and six editors, so the person writing about a category actually lives in it.
 
 | Beat | Editor | What you will find |
 | --- | --- | --- |
@@ -31,6 +31,7 @@ Six beats and five editors, so the person writing about a category actually live
 | Software | Daniel Reyes | The everyday apps people work in, compared on price, limits, and fit |
 | Hardware | Elena Petrova | PC components, peripherals, and upgrades, benchmarked before they are recommended |
 | Mobile | Marcus Lee | Phones, Android and iOS, and the apps and settings people actually live with |
+| Linux and open source | Jonas Weber | Distributions, open source apps, and self-hosting, installed and configured from scratch |
 
 Reviews and comparisons are the core, but not the whole site. Expect tutorials that use the current interface, explainers that translate a pricing page into plain numbers, and short news pieces when a tool changes something that matters.
 
@@ -72,7 +73,7 @@ One article every weekday. Updates to existing articles happen whenever a covere
 No. We do not accept sponsored reviews, paid placements, or review units with conditions. Vendors are welcome to flag factual errors, and we fix real ones.
 
 **Who writes the articles?**
-Five editors under editorial pen names, each on a fixed beat, listed on the [About](/about/) page. The byline on an article is the person accountable for its facts.
+Six editors under editorial pen names, each on a fixed beat, listed on the [About](/about/) page. The byline on an article is the person accountable for its facts.
 
 **Can I suggest a tool to cover?**
 Yes. Email nethroes@proton.me with the tool and, if you can, the question you are trying to answer. Reader questions are a regular source of comparisons.
