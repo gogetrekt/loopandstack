@@ -10,8 +10,6 @@ image:
   alt: "ChatGPT Plus versus Claude Pro"
 ---
 
-![ChatGPT Plus versus Claude Pro](/assets/img/posts/chatgpt-vs-claude.svg)
-
 ChatGPT Plus costs $20 a month. Claude Pro costs $20 a month. Same money, very different product, and picking the wrong one is an easy mistake to make.
 
 Short version: get Claude Pro if you write code or spend your day inside long documents. Get ChatGPT Plus if you want one assistant that does a bit of everything, including images and voice. Here is the full breakdown.

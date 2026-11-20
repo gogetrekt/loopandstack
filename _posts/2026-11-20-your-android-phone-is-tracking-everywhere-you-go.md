@@ -117,7 +117,3 @@ Turning Wi-Fi and Bluetooth scanning off costs you some indoor and city accuracy
 
 Open Timeline today and look at it once. Most people are surprised by how much is in there. Delete what you do not want, set auto-delete to 3 months, then spend two minutes demoting apps from "all the time" to "while using the app" and switching the rest to approximate location. Ten minutes now, and your phone stops keeping a diary you never asked to write. It is not total privacy, your photos can still carry GPS metadata and your carrier still sees your phone, but Timeline and app permissions are the two layers that matter most.
 
-## Keep reading
-
-- [ChatGPT vs Claude: Which $20 Plan Is Worth It?](/posts/chatgpt-vs-claude-which-20-plan-is-worth-it/)
-- [Welcome to loop and stack](/posts/welcome-to-loop-and-stack/)
