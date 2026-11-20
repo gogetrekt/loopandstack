@@ -219,6 +219,10 @@
     .post-navigation .btn p { margin: 0; font-size: 1.02rem; font-weight: 700; line-height: 1.35; color: var(--heading-color); white-space: normal; }
     .post-navigation .btn.disabled { opacity: .35; box-shadow: none; }
     @media (hover: hover) { .post-navigation .btn:not(.disabled) { transition: transform .18s ease, box-shadow .18s ease; } .post-navigation .btn:not(.disabled):hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10,12,20,.12); } }
+
+    .las-comments-title { display: flex; align-items: center; gap: .55rem; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; margin-top: 3.2rem; }
+    .las-comments-title::before { content: ""; width: .62rem; height: .62rem; background: #9ece6a; border-radius: 2px; flex: none; }
+    #las-comments { margin-top: 1rem; }
     .las-404 { text-align: center; padding: 1rem 0 2rem; }
     .las-404 svg { fill: var(--heading-color); margin-bottom: 1rem; }
     .las-404-text { max-width: 34rem; margin: 0 auto 1.2rem; }
