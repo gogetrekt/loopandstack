@@ -1,6 +1,6 @@
 ---
 title: "Your Android Phone Is Tracking Everywhere You Go. Here's How to See It and Clear It"
-date: 2026-11-20 15:30:00 +0700
+date: 2026-11-20 15:20:00 +0700
 categories: [Software]
 tags: [android, google-maps, timeline, location-history, privacy, how-to]
 description: "Google Maps Timeline keeps a day-by-day record of where your Android phone has been. Here is how to see it, delete a day or all of it, and stop it from recording."
