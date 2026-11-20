@@ -136,4 +136,20 @@
   {% endif %}
 
   {% include metadata-hook.html %}
+
+  <style id="las-polish">
+    ::selection { background: rgba(158, 206, 106, .35); }
+    #sidebar .site-title { font-weight: 800; letter-spacing: -0.01em; }
+    #sidebar .site-subtitle { font-style: normal; opacity: .85; }
+    #sidebar #avatar img { box-shadow: 0 0 0 3px #9ece6a, 0 8px 20px rgba(0,0,0,.35); }
+    #sidebar .nav-link { border-radius: .6rem; transition: background .2s ease, color .2s ease; }
+    #sidebar .sidebar-bottom a { transition: color .2s ease, transform .2s ease; }
+    #sidebar .sidebar-bottom a:hover { color: #9ece6a; transform: translateY(-2px); }
+    #post-list .card { border-radius: 1rem; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+    #post-list .card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.35); }
+    #post-list .card .col-md-5 { overflow: hidden; }
+    #post-list .card .col-md-5 img { transition: transform .45s ease; }
+    #post-list .card:hover .col-md-5 img { transform: scale(1.045); }
+    #post-list .card-title a, #post-list a.post-preview { text-decoration: none; }
+  </style>
 </head>
