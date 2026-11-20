@@ -6,11 +6,9 @@ tags: [android, google-maps, timeline, location-history, privacy, how-to]
 description: "Google Maps Timeline keeps a day-by-day record of where your Android phone has been. Here is how to see it, delete a day or all of it, and stop it from recording."
 author: daniel
 image:
-  path: /assets/img/posts/android-timeline-day-menu.svg
-  alt: "Google Maps Timeline menu with the Delete day option"
+  path: /assets/img/posts/android-timeline-lead.svg
+  alt: "Google Maps Timeline on an Android phone"
 ---
-
-![Google Maps Timeline menu with the Delete day option](/assets/img/posts/android-timeline-day-menu.svg)
 
 Your Android phone keeps a diary of where you go. Every visit, every route, every stop for coffee, saved day by day in Google Maps Timeline. If you turned it on at some point and forgot about it, that diary might stretch back years.
 
