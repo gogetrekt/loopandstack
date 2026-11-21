@@ -147,7 +147,7 @@ module LasOg
     require "fileutils"
     FileUtils.mkdir_p(dir)
     made = []
-    { "favicon-16x16.png" => [16, true], "favicon-32x32.png" => [32, true],
+    { "favicon-16x16.png" => [16, true], "favicon-32x32.png" => [32, true], "favicon-96x96.png" => [96, true],
       "apple-touch-icon.png" => [180, false],
       "android-chrome-192x192.png" => [192, false],
       "android-chrome-512x512.png" => [512, false] }.each do |name, (size, rounded)|
