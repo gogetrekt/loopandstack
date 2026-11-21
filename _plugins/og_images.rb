@@ -23,6 +23,8 @@ Jekyll::Hooks.register :site, :post_write do |site|
     end
     fav_dir = File.join(site.dest, "assets", "img", "favicons")
     favs = LasOg.favicon_set(fav_dir)
+    require "fileutils"
+    FileUtils.cp(File.join(fav_dir, "favicon.ico"), File.join(site.dest, "favicon.ico"))
     File.write(File.join(out_dir, "status.txt"), "ok #{Time.now.utc}\nfiles: #{made.sort.join(', ')}\nfavicons: #{favs.sort.join(', ')}\n")
   rescue StandardError => e
     begin
