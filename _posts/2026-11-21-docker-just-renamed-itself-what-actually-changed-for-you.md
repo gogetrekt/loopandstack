@@ -7,11 +7,10 @@ description: "Docker has a new whale, a new color, and a new slogan, plus Docker
 author: priya
 image:
   path: /assets/img/posts/docker-new-brand-lead.svg
-  alt: "Docker's new logo, a simplified black whale, on the new violet-blue background"
+  alt: "Docker's new logo, a simplified black whale, on the new violet-blue background. Image: Docker"
 og_image: /assets/og/docker-just-renamed-itself-what-actually-changed-for-you.png
 ---
 
-*Image: Docker*
 
 Docker has a new look. On November 19, the company unveiled a redesigned brand: a simplified Moby the whale, a deeper violet-blue, and a new slogan, "Run on Trust." Docker Desktop 4.100.0 shipped the same day wearing the new identity.
 

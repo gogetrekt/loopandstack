@@ -103,12 +103,15 @@ module LasOg
     mark(img, 70, 55, 120, WHITE)
     draw_text(img, 196, 62, "loop and stack", 3, WHITE)
     lines = wrap(title, 31)
-    if lines.length > 3
-      lines = lines[0, 3]
-      lines[2] = lines[2][0, 30].rstrip + "\u2026"
+    if lines.length > 4
+      lines = lines[0, 4]
+      lines[3] = lines[3][0, 30].rstrip + "\u2026"
     end
+    step = lines.length > 2 ? 80 : 88
+    block_h = (lines.length - 1) * step + 80
+    start_y = 225 + (535 - 225 - block_h) / 2
     lines.each_with_index do |ln, i|
-      draw_text(img, 90, 235 + i * 88, ln, 2, WHITE)
+      draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
     end
     draw_text(img, 90, 545, "loopandstack.tech", 1, MUTED)
     img.save(path)
