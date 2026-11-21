@@ -8,6 +8,15 @@ image:
   path: /assets/img/posts/welcome-line-art.svg
   alt: "Line art of a looping arrow around a stack of tools"
 og_image: /assets/og/welcome-to-loop-and-stack.png
+faq:
+  - q: "How often do you publish?"
+    a: "Two articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily articles."
+  - q: "Do vendors pay for reviews or placement?"
+    a: "No. We do not accept sponsored reviews, paid placements, or review units with conditions. Vendors are welcome to flag factual errors, and we fix real ones."
+  - q: "Who writes the articles?"
+    a: "Six editors under editorial pen names, each on a fixed beat, listed on the About page. The byline on an article is the person accountable for its facts."
+  - q: "Can I suggest a tool to cover?"
+    a: "Yes. Email nethroes@proton.me with the tool and, if you can, the question you are trying to answer. Reader questions are a regular source of comparisons."
 ---
 
 Every job in tech runs on a stack of tools, and the stack never sits still. Plans change, prices move, a feature that sold you on a product gets deprecated, and the comparison article you trusted was written two versions ago. loop and stack exists to keep up with that loop, so you do not have to.
@@ -68,7 +77,7 @@ Two commitments keep that honest. Rankings and verdicts are never for sale, and 
 ## Questions readers ask
 
 **How often do you publish?**
-One article every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily article.
+Two articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily article.
 
 **Do vendors pay for reviews or placement?**
 No. We do not accept sponsored reviews, paid placements, or review units with conditions. Vendors are welcome to flag factual errors, and we fix real ones.

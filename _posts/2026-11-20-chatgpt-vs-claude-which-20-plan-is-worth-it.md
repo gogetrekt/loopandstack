@@ -9,6 +9,15 @@ image:
   path: /assets/img/posts/chatgpt-vs-claude.svg
   alt: "ChatGPT Plus versus Claude Pro"
 og_image: /assets/og/chatgpt-vs-claude-which-20-plan-is-worth-it.png
+faq:
+  - q: "Which $20 plan is better for coding?"
+    a: "Claude Pro. Claude Code is included and the 1M-token context window (beta) holds a whole codebase or stack of long documents."
+  - q: "Is there a cheaper paid ChatGPT plan?"
+    a: "Yes, ChatGPT Go at $8 a month; Claude has no equivalent cheap tier."
+  - q: "Can I pay Claude Pro annually?"
+    a: "Yes, $17 a month billed annually ($200 instead of $240)."
+  - q: "Do I need to pay for either?"
+    a: "Probably not if you only chat a few times a week; ChatGPT Free covers that, and Claude Free is enough to compare answers. Upgrade when you hit a limit."
 ---
 
 ChatGPT Plus costs $20 a month. Claude Pro costs $20 a month. Same money, very different product, and picking the wrong one is an easy mistake to make.
@@ -77,3 +86,17 @@ Enterprise is where they split. Claude publishes its price, $20 a seat a month p
 **Buy ChatGPT Plus** if you want one assistant for everything else: questions, images, voice chats, custom GPTs, scheduled tasks. It is the broader plan, and the $8 Go tier gives you a cheaper way in.
 
 **Buy neither** if you only chat a few times a week. ChatGPT Free covers that easily, and Claude Free is enough to find out which answers you like better. Upgrade the first time you hit a limit, not before.
+
+## Frequently asked questions
+
+**Which $20 plan is better for coding?**
+Claude Pro. Claude Code is included and the 1M-token context window (beta) holds a whole codebase or stack of long documents.
+
+**Is there a cheaper paid ChatGPT plan?**
+Yes, ChatGPT Go at $8 a month; Claude has no equivalent cheap tier.
+
+**Can I pay Claude Pro annually?**
+Yes, $17 a month billed annually ($200 instead of $240).
+
+**Do I need to pay for either?**
+Probably not if you only chat a few times a week; ChatGPT Free covers that, and Claude Free is enough to compare answers. Upgrade when you hit a limit.

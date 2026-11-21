@@ -9,6 +9,15 @@ image:
   path: /assets/img/posts/android-phone-map-lead.svg
   alt: "A hand holding a smartphone showing a navigation map. Photo: Santeri Viinamaki via Wikimedia Commons, CC BY-SA, cropped."
 og_image: /assets/og/your-android-phone-is-tracking-everywhere-you-go.png
+faq:
+  - q: "Is Google Maps Timeline on by default?"
+    a: "No. It only records if you opt in; an empty Timeline means it was never turned on."
+  - q: "Does turning Timeline off delete my history?"
+    a: "No. Turning it off only stops new entries; saved history must be deleted separately."
+  - q: "Does deleting Timeline data delete my backups?"
+    a: "No. Deletion covers only the device; backups are separate."
+  - q: "What auto-delete options does Timeline offer?"
+    a: "3, 18, or 36 months; this article recommends 3 months for most people."
 ---
 
 Your Android phone keeps a diary of where you go. Every visit, every route, every stop for coffee, saved day by day in Google Maps Timeline. If you turned it on at some point and forgot about it, that diary might stretch back years.
@@ -118,3 +127,16 @@ Turning Wi-Fi and Bluetooth scanning off costs you some indoor and city accuracy
 
 Open Timeline today and look at it once. Most people are surprised by how much is in there. Delete what you do not want, set auto-delete to 3 months, then spend two minutes demoting apps from "all the time" to "while using the app" and switching the rest to approximate location. Ten minutes now, and your phone stops keeping a diary you never asked to write. It is not total privacy, your photos can still carry GPS metadata and your carrier still sees your phone, but Timeline and app permissions are the two layers that matter most.
 
+## Frequently asked questions
+
+**Is Google Maps Timeline on by default?**
+No. It only records if you opt in; an empty Timeline means it was never turned on.
+
+**Does turning Timeline off delete my history?**
+No. Turning it off only stops new entries; saved history must be deleted separately.
+
+**Does deleting Timeline data delete my backups?**
+No. Deletion covers only the device; backups are separate.
+
+**What auto-delete options does Timeline offer?**
+3, 18, or 36 months; this article recommends 3 months for most people.

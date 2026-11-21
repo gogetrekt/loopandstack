@@ -9,6 +9,13 @@ image:
   path: /assets/img/posts/docker-new-brand-lead.svg
   alt: "Docker's new logo, a simplified black whale, on the new violet-blue background. Image: Docker"
 og_image: /assets/og/docker-just-renamed-itself-what-actually-changed-for-you.png
+faq:
+  - q: "Does Docker's rebrand change how containers work?"
+    a: "No. Containers, Dockerfiles, Compose files, and Docker Hub work exactly as before."
+  - q: "What actually changed?"
+    a: "A simplified Moby whale, a deeper violet-blue, and the slogan 'Run on Trust', plus Docker Desktop 4.100.0 with the new look."
+  - q: "Do I need to update to Docker Desktop 4.100.0?"
+    a: "Take it when offered; rollouts are gradual and typically reach everyone within a week of the 19 Nov release."
 ---
 
 
@@ -67,5 +74,16 @@ That is the honest answer to the question in the title. The rename is real, the 
 ## Bottom line
 
 Update to Docker Desktop 4.100.0 when it reaches you, enjoy the handful of bug fixes, and keep shipping containers the way you already do. If you run AI coding agents, take a look at Sandboxes and AI Governance, because that is where Docker is actually heading. Everyone else can file the new whale under nice to know and get back to work.
+
+## Frequently asked questions
+
+**Does Docker's rebrand change how containers work?**
+No. Containers, Dockerfiles, Compose files, and Docker Hub work exactly as before.
+
+**What actually changed?**
+A simplified Moby whale, a deeper violet-blue, and the slogan “Run on Trust”, plus Docker Desktop 4.100.0 with the new look.
+
+**Do I need to update to Docker Desktop 4.100.0?**
+Take it when offered; rollouts are gradual and typically reach everyone within a week of the 19 Nov release.
 
 Keep reading: if AI tools are already part of your daily workflow, our [ChatGPT vs Claude: Which $20 Plan Is Worth It?](/posts/chatgpt-vs-claude-which-20-plan-is-worth-it/) breaks down what your money buys. And if you want to see what your phone knows about you, [Your Android Phone Is Tracking Everywhere You Go](/posts/your-android-phone-is-tracking-everywhere-you-go/) walks through Google Maps Timeline.
