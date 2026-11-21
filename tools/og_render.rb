@@ -116,4 +116,52 @@ module LasOg
     draw_text(img, 90, 545, "loopandstack.tech", 1, MUTED)
     img.save(path)
   end
+  def inside_rounded?(x, y, size, r)
+    return true if (x >= r && x < size - r) || (y >= r && y < size - r)
+
+    cx = x < r ? r : size - 1 - r
+    cy = y < r ? r : size - 1 - r
+    (x - cx)**2 + (y - cy)**2 <= r * r
+  end
+
+  def icon_canvas(size, rounded)
+    img = ChunkyPNG::Image.new(size, size, ChunkyPNG::Color::TRANSPARENT)
+    if rounded
+      r = (size * 0.22).round
+      size.times do |y|
+        size.times do |x|
+          img[x, y] = BG if inside_rounded?(x, y, size, r)
+        end
+      end
+    else
+      img = ChunkyPNG::Image.new(size, size, BG)
+    end
+    m = size * 0.74
+    mark(img, (size - m) / 2.0, (size - m) / 2.0, m, WHITE)
+    img
+  end
+
+  # Writes the full branded favicon set (PNGs + ICO) into dir, replacing the
+  # theme defaults. Returns the list of file names written.
+  def favicon_set(dir)
+    require "fileutils"
+    FileUtils.mkdir_p(dir)
+    made = []
+    { "favicon-16x16.png" => [16, true], "favicon-32x32.png" => [32, true],
+      "apple-touch-icon.png" => [180, false],
+      "android-chrome-192x192.png" => [192, false],
+      "android-chrome-512x512.png" => [512, false] }.each do |name, (size, rounded)|
+      icon_canvas(size, rounded).save(File.join(dir, name))
+      made << name
+    end
+    png16 = icon_canvas(16, true).to_blob
+    png32 = icon_canvas(32, true).to_blob
+    ico = [0, 1, 2].pack("v3")
+    ico << [32, 32, 0, 0, 1, 32, png32.bytesize, 6 + 32].pack("CCCCvvVV")
+    ico << [16, 16, 0, 0, 1, 32, png16.bytesize, 6 + 32 + png32.bytesize].pack("CCCCvvVV")
+    ico << png32 << png16
+    File.binwrite(File.join(dir, "favicon.ico"), ico)
+    made << "favicon.ico"
+    made
+  end
 end
