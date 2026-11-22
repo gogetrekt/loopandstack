@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The GrapheneOS logo next to a Pixel phone with a padlock on its screen, and the command fastboot flashing unlock">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1626"/>
+      <stop offset="1" stop-color="#1b2f4d"/>
+    </linearGradient>
+    <filter id="a" x="0" y="0" width="276" height="577.784" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_6_67"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80,150) scale(0.125)">
+    <path d="m771.67168 798 381.00032-217c-7.0001-21-12.0001-43-12.0001-67 0-92 67.0001-168 155.0001-184v-330h64v330c88 16 155 92 155 184 0 24-5 46-13 67l382 217c14-16 31-30 50-42 80-46 180-26 237 42l286-165 32 56-286 165c31 84-2 180-82 226-18 10-36 17-55 21v442c19 4 37 11 55 21 80 46 113 142 82 226l286 165-32 56-286-165c-57 68-157 88-237 42-19-12-36-26-50-42-127 72-254 145-382 217 8 21 13 43 13 67 0 92-67 168-155 184v330h-64v-330c-88-16-155.0001-92-155.0001-184 0-24 5-46 12.0001-67l-381.00032-217c-14 16-31 30-50 42-80 46-180 26-237-42l-285.99999 165-32-56 285.99999-165c-31-84 2-180 82-226 18-10 36-17 55-21v-442c-19-4-37-11-55-21-80-46-113-142-82-226l-285.99999-165 32-56 285.99999 165c57-68 157-88 237-42 19 12 36 26 50 42zm1080.00032 992c-18-50-15-108 14-157 30-52 81-84 136-92v-438c-55-8-106-40-136-92-29-49-32-107-14-157l-382-218c-35 40-85 65-142 65s-107-25-142-65l-382.00032 218c18 50 15 108-14 157-30 52-81 84-136 92v438c55 8 106 40 136 92 29 49 32 107 14 157l382.00032 218c35-40 85-65 142-65s107 25 142 65z" fill="#dbe7f3" fill-rule="nonzero"/>
+  </g>
+  <text x="450" y="292" font-family="Helvetica, Arial, sans-serif" font-size="66" font-weight="bold" fill="#f1f5f9">GrapheneOS</text>
+  <text x="450" y="342" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#9fb3c8">The private and secure mobile OS</text>
+  <g transform="translate(880,75) scale(0.82)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 0C9.163 0 2 7.163 2 16v547c0 8.837 7.163 16 16 16h240c8.837 0 16-7.163 16-16V16c0-8.837-7.163-16-16-16H18Zm2 6C11.163 6 4 13.163 4 22v537c0 8.837 7.163 16 16 16h236c8.837 0 16-7.163 16-16V22c0-8.837-7.163-16-16-16H20Z" fill="#979A97"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3C11.163 3 4 10.164 4 19v541c0 8.837 7.163 16 16 16h236c8.837 0 16-7.163 16-16V19c0-8.837-7.163-16-16-16H20Zm7 7c-8.837 0-16 7.163-16 16v527c0 8.837 7.163 16 16 16h222c8.837 0 16-7.163 16-16V26c0-8.837-7.163-16-16-16H27Z" fill="#000"/>
+    <g filter="url(#a)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4C11.163 4 4 11.164 4 20v539c0 6.665 4.076 12.379 9.871 14.784C9.16 571 6 565.869 6 560V20c0-8.836 7.163-16 16-16h-2Zm234 0c8.837 0 16 7.163 16 16v540c0 5.869-3.16 11-7.871 13.784C267.924 571.379 272 565.665 272 559V20c0-8.837-7.163-16-16-16h-2Z" fill="#fff"/>
+    </g>
+    <circle cx="138.5" cy="26.5" r="7.5" fill="#000"/>
+    <circle cx="138.5" cy="26.5" r="5.5" fill="#0F1415"/>
+    <circle cx="138.5" cy="26.5" r="2.5" fill="#151E1E"/>
+    <circle cx="139.5" cy="27.5" r="1.5" fill="#1B2123"/>
+    <circle cx="139.5" cy="27.5" r=".5" fill="#3E4749"/>
+    <path d="M273 181a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v33a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-33ZM273 252a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v68a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-68Z" fill="#767676"/>
+    <path d="M118 300 v-14 a20 20 0 0 1 40 0 v14" fill="none" stroke="#4ade80" stroke-width="9"/>
+    <rect x="106" y="298" width="64" height="52" rx="10" fill="#4ade80"/>
+    <circle cx="138" cy="318" r="7" fill="#0e1626"/>
+    <rect x="135.5" y="318" width="5" height="16" rx="2.5" fill="#0e1626"/>
+  </g>
+  <text x="80" y="570" font-family="monospace" font-size="27" fill="#4ade80">$ fastboot flashing unlock</text>
+</svg>
