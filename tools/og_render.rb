@@ -91,39 +91,48 @@ module LasOg
 
   def default_card(path)
     img = base_canvas
-    mark(img, 70, 170, 250, WHITE)
-    draw_text(img, 354, 198, "loop and stack", 3, WHITE)
-    draw_text(img, 358, 336, "all about the tools", 2, MUTED)
-    draw_text(img, 358, 418, "that power modern tech", 2, MUTED)
+    mark(img, 70, 150, 250, WHITE)
+    draw_text(img, 354, 178, "loop and stack", 3, WHITE)
+    draw_text(img, 358, 330, "all about the tools", 2, MUTED)
+    draw_text(img, 358, 410, "that power modern tech", 2, MUTED)
     img.save(path)
   end
 
-  # Layout keeps all content inside the central band (roughly y 110-520):
-  # chat apps like WhatsApp center-crop the 1200x630 card to a much wider
-  # frame in link previews, trimming the top and bottom. The old layout put
-  # the wordmark at y 55 and the footer at y 545, so previews sliced the
-  # wordmark and dropped the footer entirely.
+  # WhatsApp center-crops the 1200x630 card to about 3.3:1 in link
+  # previews, so only the band y 133-497 survives (measured from the
+  # user's own screenshots, 2026-11-22). All content must live inside
+  # y 150-495: compact header on top, title block below it, footer only
+  # when a short title leaves room. An earlier layout targeting a
+  # 2.85:1 crop still got its wordmark shaved on the user's phone.
   def post_card(path, title)
     img = base_canvas
-    mark(img, 70, 118, 108, WHITE)
-    draw_text(img, 186, 112, "loop and stack", 3, WHITE)
+    mark(img, 70, 160, 76, WHITE)
+    draw_text(img, 156, 158, "loop and stack", 2, WHITE)
     lines = wrap(title, 31)
     if lines.length > 4
       lines = lines[0, 4]
       lines[3] = lines[3][0, 30].rstrip + "\u2026"
     end
-    if lines.length <= 3
-      step = lines.length > 2 ? 80 : 88
+    case lines.length
+    when 1..2
+      step = 88
       block_h = (lines.length - 1) * step + 80
-      start_y = 250 + (510 - 250 - block_h) / 2
+      start_y = 252 + (480 - 252 - block_h) / 2
       lines.each_with_index do |ln, i|
         draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
       end
-      draw_text(img, 90, 472, "loopandstack.tech", 1, MUTED) if lines.length <= 2
-    else
-      step = 80
+      draw_text(img, 90, 456, "loopandstack.tech", 1, MUTED)
+    when 3
+      step = 66
       block_h = (lines.length - 1) * step + 80
-      start_y = 240 + (560 - 240 - block_h) / 2
+      start_y = 252 + (480 - 252 - block_h) / 2
+      lines.each_with_index do |ln, i|
+        draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
+      end
+    else
+      step = 60
+      block_h = (lines.length - 1) * step + 80
+      start_y = 246
       lines.each_with_index do |ln, i|
         draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
       end
