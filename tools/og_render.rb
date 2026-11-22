@@ -91,29 +91,43 @@ module LasOg
 
   def default_card(path)
     img = base_canvas
-    mark(img, 70, 190, 250, WHITE)
-    draw_text(img, 354, 218, "loop and stack", 3, WHITE)
-    draw_text(img, 358, 356, "all about the tools", 2, MUTED)
-    draw_text(img, 358, 438, "that power modern tech", 2, MUTED)
+    mark(img, 70, 170, 250, WHITE)
+    draw_text(img, 354, 198, "loop and stack", 3, WHITE)
+    draw_text(img, 358, 336, "all about the tools", 2, MUTED)
+    draw_text(img, 358, 418, "that power modern tech", 2, MUTED)
     img.save(path)
   end
 
+  # Layout keeps all content inside the central band (roughly y 110-520):
+  # chat apps like WhatsApp center-crop the 1200x630 card to a much wider
+  # frame in link previews, trimming the top and bottom. The old layout put
+  # the wordmark at y 55 and the footer at y 545, so previews sliced the
+  # wordmark and dropped the footer entirely.
   def post_card(path, title)
     img = base_canvas
-    mark(img, 70, 55, 120, WHITE)
-    draw_text(img, 196, 62, "loop and stack", 3, WHITE)
+    mark(img, 70, 118, 108, WHITE)
+    draw_text(img, 186, 112, "loop and stack", 3, WHITE)
     lines = wrap(title, 31)
     if lines.length > 4
       lines = lines[0, 4]
       lines[3] = lines[3][0, 30].rstrip + "\u2026"
     end
-    step = lines.length > 2 ? 80 : 88
-    block_h = (lines.length - 1) * step + 80
-    start_y = 225 + (535 - 225 - block_h) / 2
-    lines.each_with_index do |ln, i|
-      draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
+    if lines.length <= 3
+      step = lines.length > 2 ? 80 : 88
+      block_h = (lines.length - 1) * step + 80
+      start_y = 250 + (510 - 250 - block_h) / 2
+      lines.each_with_index do |ln, i|
+        draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
+      end
+      draw_text(img, 90, 472, "loopandstack.tech", 1, MUTED) if lines.length <= 2
+    else
+      step = 80
+      block_h = (lines.length - 1) * step + 80
+      start_y = 240 + (560 - 240 - block_h) / 2
+      lines.each_with_index do |ln, i|
+        draw_text(img, 90, start_y + i * step, ln, 2, WHITE)
+      end
     end
-    draw_text(img, 90, 545, "loopandstack.tech", 1, MUTED)
     img.save(path)
   end
   def inside_rounded?(x, y, size, r)
