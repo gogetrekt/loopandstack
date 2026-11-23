@@ -48,7 +48,7 @@ Our writers publish under editorial pen names, and each covers a fixed beat:
     <div class="las-team-body">
       <div class="las-team-name">Elena Petrova</div>
       <div class="las-team-role">Hardware and Networking Editor</div>
-      <p>Covers PC hardware, components, peripherals, and home networking: routers, Wi-Fi, and NAS boxes. Benchmarks every pick and checks street prices, so a recommendation still holds up at checkout.</p>
+      <p>Covers PC hardware, components, peripherals, and home networking gear like routers, Wi-Fi, and NAS boxes. Benchmarks every pick and checks street prices, so a recommendation still holds up at checkout.</p>
     </div>
   </div>
   <div class="las-team-card">
