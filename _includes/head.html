@@ -84,6 +84,22 @@
 
   {% include_cached favicons.html %}
 
+  <!-- LCP image preload: the theme lazy-loads every image, so fetch the lead image early -->
+  {%- if page.layout == 'post' and page.image -%}
+    {%- assign _lcp_img = page.image.path | default: page.image -%}
+  {%- elsif page.layout == 'home' -%}
+    {%- assign _lcp_post = site.posts | where: 'pin', 'true' | first | default: site.posts.first -%}
+    {%- if _lcp_post.image -%}
+      {%- assign _lcp_img = _lcp_post.image.path | default: _lcp_post.image -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- if _lcp_img -%}
+    {%- unless _lcp_img contains '://' -%}
+      {%- assign _lcp_img = _lcp_img | relative_url -%}
+    {%- endunless -%}
+    <link rel="preload" as="image" fetchpriority="high" href="{{ _lcp_img }}">
+  {%- endif -%}
+
   <!-- Resource Hints -->
   {% unless site.assets.self_host.enabled %}
     {% for hint in site.data.origin.cors.resource_hints %}
