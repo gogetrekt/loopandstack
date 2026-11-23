@@ -5,7 +5,7 @@ categories: [Announcements]
 tags: [news]
 description: "loop and stack is an independent publication about the tools that power modern tech: AI tools, developer tools, security and privacy, software, hardware, networking, mobile, and Linux. Reviews, comparisons, and tutorials researched fresh from primary sources."
 image:
-  path: /assets/img/posts/welcome-workspace.jpg
+  path: /assets/img/posts/welcome-workspace.svg
   alt: "A developer at a desk with an ultrawide monitor running code (Photo: StockSnap, CC0)"
 og_image: /assets/og/welcome-to-loop-and-stack.png
 faq:
