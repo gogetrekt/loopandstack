@@ -52,7 +52,7 @@ Reviews and comparisons are the core, but not the whole site. Expect tutorials t
 The process is the product. Every article, whether it is a two-tool comparison or a pricing breakdown, goes through the same loop.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Fresh research] --> B[Primary source check]
     B --> C[Draft and test]
     C --> D[Fact check]
