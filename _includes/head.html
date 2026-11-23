@@ -79,6 +79,7 @@
       {{- title | append: ' | ' -}}
     {%- endunless -%}
     {{- site.title -}}
+    {%- if page.layout == 'home' %} | {{ site.tagline }}{% endif -%}
   </title>
 
   {% include_cached favicons.html %}
