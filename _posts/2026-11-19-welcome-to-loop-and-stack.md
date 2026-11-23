@@ -8,6 +8,7 @@ image:
   path: /assets/img/posts/welcome-workspace.svg
   alt: "A developer at a desk with an ultrawide monitor running code (Photo: StockSnap, CC0)"
 og_image: /assets/og/welcome-to-loop-and-stack.png
+mermaid: true
 faq:
   - q: "How often do you publish?"
     a: "Three articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily articles."
