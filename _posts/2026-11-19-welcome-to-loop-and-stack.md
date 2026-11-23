@@ -3,14 +3,14 @@ title: "Welcome to loop and stack"
 date: 2026-11-19 23:40:00 +0700
 categories: [Announcements]
 tags: [news]
-description: "loop and stack is an independent publication about the tools that power modern tech: AI tools, developer tools, security tools, and software. Reviews, comparisons, tutorials, and pricing guides, researched fresh from primary sources."
+description: "loop and stack is an independent publication about the tools that power modern tech: AI tools, developer tools, security and privacy, software, hardware, networking, mobile, and Linux. Reviews, comparisons, and tutorials researched fresh from primary sources."
 image:
-  path: /assets/img/posts/welcome-line-art.svg
-  alt: "Line art of a looping arrow around a stack of tools"
+  path: /assets/img/posts/welcome-workspace.jpg
+  alt: "A developer at a desk with an ultrawide monitor running code (Photo: StockSnap, CC0)"
 og_image: /assets/og/welcome-to-loop-and-stack.png
 faq:
   - q: "How often do you publish?"
-    a: "Two articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily articles."
+    a: "Three articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily articles."
   - q: "Do vendors pay for reviews or placement?"
     a: "No. We do not accept sponsored reviews, paid placements, or review units with conditions. Vendors are welcome to flag factual errors, and we fix real ones."
   - q: "Who writes the articles?"
@@ -27,19 +27,20 @@ We are an independent publication about the tools that power modern tech. We rev
 
 Because the tool layer is where the money and the hours go, and it is oddly underserved. Vendor pages are written to sell, not to inform. Roundups on big sites are often refreshed in name only, with last year's findings under this year's date. Forums know the truth but bury it in threads nobody can find twice.
 
-Our answer is boring and strict: fewer topics, covered properly, updated when they change. Two articles every weekday, researched fresh that morning from primary sources, so you can check our work.
+Our answer is boring and strict: fewer topics, covered properly, updated when they change. Three articles every weekday, researched fresh from primary sources, so you can check our work.
 
 ## What we cover
 
-Seven beats and six editors, so the person writing about a category actually lives in it.
+Eight beats and six editors. Most editors cover two desks, so the person writing about a category actually lives in it.
 
 | Beat | Editor | What you will find |
 | --- | --- | --- |
 | AI tools | Daniel Reyes | Assistants, writing and image tools, automation platforms, plan and pricing breakdowns |
-| Developer tools | Priya Nair | Editors, terminals, CI, hosting, and the tooling around shipping code |
-| Security tools | Tomas Silva | VPNs, password managers, and privacy software, tested against their own claims |
+| Developer tools | Priya Nair | Editors, terminals, CI, hosting, cloud platforms, and the tooling around shipping code |
+| Security tools | Tomas Silva | VPNs, password managers, encryption, and privacy software, tested against their own claims |
 | Software | Daniel Reyes | The everyday apps people work in, compared on price, limits, and fit |
 | Hardware | Elena Petrova | PC components, peripherals, and upgrades, benchmarked before they are recommended |
+| Networking | Elena Petrova | Routers, Wi-Fi, mesh systems, and NAS boxes, set up and measured at home |
 | Mobile | Marcus Lee | Phones, Android and iOS, and the apps and settings people actually live with |
 | Linux and open source | Jonas Weber | Distributions, open source apps, and self-hosting, installed and configured from scratch |
 
@@ -77,7 +78,7 @@ Two commitments keep that honest. Rankings and verdicts are never for sale, and 
 ## Questions readers ask
 
 **How often do you publish?**
-Two articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily article.
+Three articles every weekday. Updates to existing articles happen whenever a covered tool changes its pricing or features, and they do not count toward the daily articles.
 
 **Do vendors pay for reviews or placement?**
 No. We do not accept sponsored reviews, paid placements, or review units with conditions. Vendors are welcome to flag factual errors, and we fix real ones.

@@ -31,31 +31,31 @@ Our writers publish under editorial pen names, and each covers a fixed beat:
     <img class="las-team-avatar-img" src="/assets/img/avatars/priya.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Priya Nair</div>
-      <div class="las-team-role">Developer Tools Editor</div>
-      <p>Covers editors, terminals, CI, and hosting. Every tutorial is run end to end on a clean setup before it is published, with the failures left in.</p>
+      <div class="las-team-role">Developer Tools and Cloud Editor</div>
+      <p>Covers editors, terminals, CI, hosting, and cloud platforms. Every tutorial is run end to end on a clean setup before it is published, with the failures left in.</p>
     </div>
   </div>
   <div class="las-team-card">
     <img class="las-team-avatar-img" src="/assets/img/avatars/tomas.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Tomas Silva</div>
-      <div class="las-team-role">Security Tools Editor</div>
-      <p>Covers VPNs, password managers, and privacy software. Tests marketing claims against what the product actually does.</p>
+      <div class="las-team-role">Security Tools and Privacy Editor</div>
+      <p>Covers VPNs, password managers, encryption, and privacy software. Tests marketing claims against what the product actually does.</p>
     </div>
   </div>
   <div class="las-team-card">
     <img class="las-team-avatar-img" src="/assets/img/avatars/elena.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Elena Petrova</div>
-      <div class="las-team-role">Hardware Editor</div>
-      <p>Covers PC hardware, components, and peripherals. Benchmarks every pick and checks street prices, so a recommendation still holds up at checkout.</p>
+      <div class="las-team-role">Hardware and Networking Editor</div>
+      <p>Covers PC hardware, components, peripherals, and home networking: routers, Wi-Fi, and NAS boxes. Benchmarks every pick and checks street prices, so a recommendation still holds up at checkout.</p>
     </div>
   </div>
   <div class="las-team-card">
     <img class="las-team-avatar-img" src="/assets/img/avatars/marcus.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Marcus Lee</div>
-      <div class="las-team-role">Mobile Editor</div>
+      <div class="las-team-role">Mobile and Apps Editor</div>
       <p>Covers Android, iOS, and the apps people live in. Follows the changelogs, and flags the settings and permissions that are worth changing on your own phone.</p>
     </div>
   </div>
@@ -63,7 +63,7 @@ Our writers publish under editorial pen names, and each covers a fixed beat:
     <img class="las-team-avatar-img" src="/assets/img/avatars/jonas.svg" alt="" width="48" height="48">
     <div class="las-team-body">
       <div class="las-team-name">Jonas Weber</div>
-      <div class="las-team-role">Linux and Open Source Editor</div>
+      <div class="las-team-role">Linux, Open Source, and Self-Hosting Editor</div>
       <p>Covers Linux distributions, open source software, and self-hosting. Installs and configures everything from scratch for each guide, then writes down the steps that actually worked.</p>
     </div>
   </div>
