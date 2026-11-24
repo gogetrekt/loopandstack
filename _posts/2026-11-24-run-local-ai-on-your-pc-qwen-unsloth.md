@@ -7,7 +7,7 @@ description: "A 27-billion-parameter model now runs on a single mid-range graphi
 author: daniel
 image:
   path: /assets/img/posts/qwen-unsloth-local-ai-lead.svg
-  alt: "Qwen plus Unsloth runs on your PC"
+  alt: "A gaming PC with a GeForce RTX graphics card, the hardware that runs local AI models (Photo: MoreThanTech, CC BY 3.0, via Wikimedia Commons)"
 og_image: /assets/og/run-local-ai-on-your-pc-qwen-unsloth.png
 faq:
   - q: "How much VRAM do I need to run Qwen locally?"
