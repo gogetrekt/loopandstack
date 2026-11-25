@@ -7,21 +7,41 @@ layout: default
 
 <style>
   .las-latest { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em; margin: 0.2rem 0 1rem; padding-bottom: 0.45rem; border-bottom: 3px solid #9ece6a; }
-  .las-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.25rem; }
-  @media (min-width: 1200px) { .las-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; } }
-  .las-grid .card-wrapper { margin-bottom: 0; }
-  .las-grid-card .preview-img { aspect-ratio: 16 / 9; height: auto; }
-  .las-grid-img { width: 100%; height: 100%; object-fit: cover; border-radius: 0.625rem 0.625rem 0 0; }
-  .las-grid-title { font-size: 1.08rem; line-height: 1.35; }
-  #post-list .card .card-body .las-grid-title { -webkit-line-clamp: 3; }
-  @media (max-width: 575px) { .las-grid-title { font-size: 0.95rem; } }
-  .las-grid-cat { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5b8c3e; margin: 0.1rem 0 0.35rem; }
-  .las-grid-byline { font-size: 0.85rem; color: var(--text-muted-color); margin-top: auto; padding-top: 0.6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .las-grid-excerpt p { font-size: 0.88rem; }
-  .las-grid-card { transition: transform 0.15s ease, box-shadow 0.15s ease; }
-  .las-grid-card:hover { transform: translateY(-2px); }
-  .las-grid-card > a { display: flex; flex-direction: column; height: 100%; }
-  .las-grid-card .card-body { flex: 1 1 auto; }
+  /* Magazine model (naxeem): big/small boxes, varied placement. Desktop >=992px only; below that the cards stack single-column like the old list. */
+  .las-sticky { display: block; margin-top: 1.25rem; }
+  .las-sticky-card, .las-recent-feature { background: var(--card-bg); border: 1px solid var(--main-border-color); border-radius: 0.625rem; overflow: hidden; margin-bottom: 1.25rem; }
+  .las-sticky-card > a, .las-recent-feature > a { display: block; text-decoration: none; }
+  .las-sticky-card .preview-img, .las-recent-feature .preview-img { aspect-ratio: 16 / 10; height: auto; }
+  .las-overlay-img { width: 100%; height: 100%; object-fit: cover; }
+  .las-sticky-overlay { padding: 1rem 1rem 0.25rem; }
+  .las-sticky-date { font-size: 0.8rem; color: var(--text-muted-color); }
+  .las-sticky-title { font-size: 1.15rem; line-height: 1.3; font-weight: 700; margin: 0.25rem 0 0; color: var(--heading-color); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .las-sticky-body { padding: 0 1rem 1rem; }
+  .las-sticky-excerpt { font-size: 0.9rem; color: var(--text-muted-color); margin: 0.35rem 0 0.25rem; }
+  .las-sticky-byline { font-size: 0.85rem; color: var(--text-muted-color); }
+  .las-recent-wrap { margin-top: 2.5rem; }
+  .las-recent { display: block; margin-top: 1.25rem; }
+  @media (min-width: 992px) {
+    .las-sticky { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .las-sticky-card { margin-bottom: 0; }
+    .las-sticky-card > a { position: relative; height: 100%; }
+    .las-sticky-card .preview-img { aspect-ratio: 3 / 2; }
+    .las-sticky-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 3rem 1.1rem 1.1rem; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0) 100%); }
+    .las-sticky-date { color: rgba(255,255,255,0.85); }
+    .las-sticky-title { color: #fff; font-size: 1.25rem; }
+    .las-sticky-body { display: none; }
+    .las-recent { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .las-recent .las-sticky-card .preview-img { aspect-ratio: 16 / 9; }
+    .las-recent .las-sticky-card .las-sticky-title { font-size: 1.05rem; }
+    .las-recent .las-sticky-card:last-child { grid-column: span 2; }
+    .las-recent .las-sticky-card:last-child .preview-img { aspect-ratio: 21 / 9; }
+    .las-recent-feature { grid-column: span 2; margin-bottom: 0; }
+    .las-recent-feature > a { position: relative; height: 100%; }
+    .las-recent-feature .preview-img { aspect-ratio: 21 / 9; }
+    .las-recent-feature .las-sticky-title { font-size: 1.5rem; }
+  }
+  .las-sticky-card, .las-recent-feature { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .las-sticky-card:hover, .las-recent-feature:hover { transform: translateY(-2px); }
   .las-section { margin-top: 2.5rem; }
   .las-section-title { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 1rem; padding-bottom: 0.45rem; border-bottom: 3px solid #9ece6a; }
   .las-more-row { display: flex; gap: 1rem; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid var(--main-border-color); }
@@ -83,143 +103,89 @@ layout: default
   <h1 class="las-latest">The Latest</h1>
   {% endif %}
 
-  {% comment %} Featured story: the newest post, kept as the big horizontal card {% endcomment %}
-  {% for post in posts limit: 1 %}
-    <article class="card-wrapper card">
-      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
-        {% assign card_body_col = '12' %}
-
-        {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
-
-          {% if post.media_subpath %}
-            {% unless src contains '://' %}
-              {% assign src = post.media_subpath
-                | append: '/'
-                | append: src
-                | replace: '///', '/'
-                | replace: '//', '/'
-              %}
-            {% endunless %}
-          {% endif %}
-
-          {% if post.image.lqip %}
-            {% assign lqip = post.image.lqip %}
-
+  {% comment %} Magazine model: top 4 posts as 2x2 overlay cards (desktop); stacked image-top cards on mobile {% endcomment %}
+  {% if posts.size > 0 %}
+  <div class="las-sticky">
+    {% for post in posts limit: 4 %}
+      <article class="las-sticky-card">
+        <a href="{{ post.url | relative_url }}">
+          {% if post.image %}
+            {% assign src = post.image.path | default: post.image %}
             {% if post.media_subpath %}
-              {% unless lqip contains 'data:' %}
-                {% assign lqip = post.media_subpath
-                  | append: '/'
-                  | append: lqip
-                  | replace: '///', '/'
-                  | replace: '//', '/'
-                %}
+              {% unless src contains '://' %}
+                {% assign src = post.media_subpath | append: '/' | append: src | replace: '///', '/' | replace: '//', '/' %}
               {% endunless %}
             {% endif %}
-
-            {% assign lqip_attr = 'lqip="' | append: lqip | append: '"' %}
+            {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+            <img class="las-overlay-img" src="{{ src }}" alt="{{ alt }}">
           {% endif %}
-
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
-          <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip_attr }}>
+          <div class="las-sticky-overlay">
+            <span class="las-sticky-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2 class="las-sticky-title">{{ post.title }}</h2>
           </div>
-
-          {% assign card_body_col = '7' %}
-        {% endif %}
-
-        <div class="col-md-{{ card_body_col }}">
-          <div class="card-body d-flex flex-column">
-            <h2 class="card-title my-2 mt-md-0">{{ post.title }}</h2>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>{% include post-summary.html %}</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                {% include datetime.html date=post.date lang=lang %}
-
-                <!-- categories -->
-                {% if post.categories.size > 0 %}
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    {% for category in post.categories %}
-                      {{ category }}
-                      {%- unless forloop.last -%},{%- endunless -%}
-                    {% endfor %}
-                  </span>
-                {% endif %}
-
-                {% if post.author %}
-                  {% assign card_author = site.data.authors[post.author] %}
-                  {% if card_author %}
-                    <span class="las-card-author"><i class="far fa-user fa-fw me-1"></i>{{ card_author.name }}</span>
-                  {% endif %}
-                {% endif %}
-                <span class="las-card-read"><i class="far fa-clock fa-fw me-1"></i>{{ post.content | number_of_words | divided_by: 200.0 | ceil }} min read</span>
-              </div>
-
-              {% if post.pin %}
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-                </div>
-              {% endif %}
-            </div>
-            <!-- .post-meta -->
+          <div class="las-sticky-body">
+            <p class="las-sticky-excerpt">{% include post-summary.html %}</p>
+            <div class="las-sticky-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
           </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  {% endfor %}
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+  {% endif %}
 
-  {% comment %} The rest of the page as an HTG-style grid: image on top, title and excerpt below {% endcomment %}
-  {% if posts.size > 1 %}
-  <div class="las-grid">
-    {% for post in posts offset: 1 %}
-        <article class="card-wrapper card h-100 las-grid-card">
-          <a href="{{ post.url | relative_url }}" class="post-preview d-flex flex-column h-100">
+  {% comment %} Recent section: first one spans full width as a big overlay feature, the rest in a 2-col grid, last card wide {% endcomment %}
+  {% if posts.size > 4 %}
+  <div class="las-recent-wrap">
+    <div class="las-recent">
+      {% for post in posts offset: 4 limit: 1 %}
+        <article class="las-recent-feature">
+          <a href="{{ post.url | relative_url }}">
             {% if post.image %}
               {% assign src = post.image.path | default: post.image %}
-
               {% if post.media_subpath %}
                 {% unless src contains '://' %}
-                  {% assign src = post.media_subpath
-                    | append: '/'
-                    | append: src
-                    | replace: '///', '/'
-                    | replace: '//', '/'
-                  %}
+                  {% assign src = post.media_subpath | append: '/' | append: src | replace: '///', '/' | replace: '//', '/' %}
                 {% endunless %}
               {% endif %}
-
               {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
-              <img class="las-grid-img" src="{{ src }}" alt="{{ alt }}">
+              <img class="las-overlay-img" src="{{ src }}" alt="{{ alt }}">
             {% endif %}
-
-            <div class="card-body d-flex flex-column">
-              {% if post.categories.size > 0 %}
-                <div class="las-grid-cat">{{ post.categories | first }}</div>
-              {% endif %}
-
-              <h2 class="card-title las-grid-title my-2 mt-md-0">{{ post.title }}</h2>
-
-              <div class="card-text content mt-0 mb-2 las-grid-excerpt">
-                <p>{% include post-summary.html %}</p>
-              </div>
-
-              <div class="las-grid-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
+            <div class="las-sticky-overlay">
+              <span class="las-sticky-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2 class="las-sticky-title">{{ post.title }}</h2>
             </div>
-            <!-- .card-body -->
+            <div class="las-sticky-body">
+              <p class="las-sticky-excerpt">{% include post-summary.html %}</p>
+              <div class="las-sticky-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
+            </div>
           </a>
         </article>
-    {% endfor %}
+      {% endfor %}
+      {% for post in posts offset: 5 %}
+        <article class="las-sticky-card">
+          <a href="{{ post.url | relative_url }}">
+            {% if post.image %}
+              {% assign src = post.image.path | default: post.image %}
+              {% if post.media_subpath %}
+                {% unless src contains '://' %}
+                  {% assign src = post.media_subpath | append: '/' | append: src | replace: '///', '/' | replace: '//', '/' %}
+                {% endunless %}
+              {% endif %}
+              {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+              <img class="las-overlay-img" src="{{ src }}" alt="{{ alt }}">
+            {% endif %}
+            <div class="las-sticky-overlay">
+              <span class="las-sticky-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2 class="las-sticky-title">{{ post.title }}</h2>
+            </div>
+            <div class="las-sticky-body">
+              <p class="las-sticky-excerpt">{% include post-summary.html %}</p>
+              <div class="las-sticky-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
   </div>
   {% endif %}
 </div>
