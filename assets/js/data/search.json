@@ -1,0 +1,17 @@
+---
+layout: compress
+---
+
+[
+  {% for post in site.posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "categories": {{ post.categories | join: ', ' | jsonify }},
+    "tags": {{ post.tags | join: ', ' | jsonify }},
+    "date": {{ post.date | jsonify }},
+    {% comment %} content sengaja spasi doang: template hasil search pakai {content} buat snippet, tapi kalau diisi teks artikel, Simple-Jekyll-Search ikut nyari ke isi artikel (cari "linux" nemu 6 artikel padahal cuma 1 yg judul/tag-nya linux). Spasi tidak match kata apa pun, jadi search cuma nyari judul, kategori, dan tag. {% endcomment %}
+    "content": " "
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
