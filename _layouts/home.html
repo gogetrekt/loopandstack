@@ -10,33 +10,28 @@ layout: default
   /* Magazine model (naxeem): big/small boxes, varied placement. Desktop >=992px only; below that the cards stack single-column like the old list. */
   .las-sticky { display: block; margin-top: 1.25rem; }
   .las-sticky-card, .las-recent-feature { background: var(--card-bg); border: 1px solid var(--main-border-color); border-radius: 0.625rem; overflow: hidden; margin-bottom: 1.25rem; }
-  .las-sticky-card > a, .las-recent-feature > a { display: block; text-decoration: none; }
+  .las-sticky-card > a, .las-recent-feature > a { display: block; position: relative; text-decoration: none; }
   .las-sticky-card .preview-img, .las-recent-feature .preview-img { aspect-ratio: 16 / 10; height: auto; }
   .las-overlay-img { width: 100%; height: 100%; object-fit: cover; }
-  .las-sticky-overlay { padding: 1rem 1rem 0.25rem; }
-  .las-sticky-date { font-size: 0.8rem; color: var(--text-muted-color); }
-  .las-sticky-title { font-size: 1.15rem; line-height: 1.3; font-weight: 700; margin: 0.25rem 0 0; color: var(--heading-color); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  .las-sticky-body { padding: 0 1rem 1rem; }
-  .las-sticky-excerpt { font-size: 0.9rem; color: var(--text-muted-color); margin: 0.35rem 0 0.25rem; }
-  .las-sticky-byline { font-size: 0.85rem; color: var(--text-muted-color); }
+  /* Overlay on ALL viewports (mobile too): the magazine look is stacked overlay cards, not the old list. */
+  .las-sticky-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 3rem 1.1rem 1.1rem; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0) 100%); }
+  .las-sticky-date { font-size: 0.8rem; color: rgba(255,255,255,0.85); }
+  .las-sticky-title { font-size: 1.15rem; line-height: 1.3; font-weight: 700; margin: 0.25rem 0 0; color: #fff; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .las-recent-wrap { margin-top: 2.5rem; }
   .las-recent { display: block; margin-top: 1.25rem; }
   @media (min-width: 992px) {
     .las-sticky { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     .las-sticky-card { margin-bottom: 0; }
-    .las-sticky-card > a { position: relative; height: 100%; }
+    .las-sticky-card > a { height: 100%; }
     .las-sticky-card .preview-img { aspect-ratio: 3 / 2; }
-    .las-sticky-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 3rem 1.1rem 1.1rem; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0) 100%); }
-    .las-sticky-date { color: rgba(255,255,255,0.85); }
-    .las-sticky-title { color: #fff; font-size: 1.25rem; }
-    .las-sticky-body { display: none; }
+    .las-sticky-title { font-size: 1.25rem; }
     .las-recent { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     .las-recent .las-sticky-card .preview-img { aspect-ratio: 16 / 9; }
     .las-recent .las-sticky-card .las-sticky-title { font-size: 1.05rem; }
     .las-recent .las-sticky-card:last-child { grid-column: span 2; }
     .las-recent .las-sticky-card:last-child .preview-img { aspect-ratio: 21 / 9; }
     .las-recent-feature { grid-column: span 2; margin-bottom: 0; }
-    .las-recent-feature > a { position: relative; height: 100%; }
+    .las-recent-feature > a { height: 100%; }
     .las-recent-feature .preview-img { aspect-ratio: 21 / 9; }
     .las-recent-feature .las-sticky-title { font-size: 1.5rem; }
   }
@@ -47,6 +42,8 @@ layout: default
   .las-more-row { display: flex; gap: 1rem; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid var(--main-border-color); }
   .las-more-row:last-child { border-bottom: 0; }
   .las-more-row .preview-img { width: 112px; min-width: 112px; aspect-ratio: 16 / 10; height: auto; border-radius: 0.5rem; }
+  /* Theme JS only removes the loading shimmer for `article img`; More rows are <a> in a <section>, so their thumbs shimmer forever. Kill the animation here. */
+  .las-more-row .preview-img.shimmer::before { display: none; }
   .las-more-thumb { width: 100%; height: 100%; object-fit: cover; }
   .las-more-title { font-size: 1.02rem; line-height: 1.35; font-weight: 700; margin: 0 0 0.25rem; }
   .las-more-excerpt { font-size: 0.9rem; color: var(--text-muted-color); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 0.25rem; }
@@ -123,10 +120,6 @@ layout: default
             <span class="las-sticky-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h2 class="las-sticky-title">{{ post.title }}</h2>
           </div>
-          <div class="las-sticky-body">
-            <p class="las-sticky-excerpt">{% include post-summary.html %}</p>
-            <div class="las-sticky-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
-          </div>
         </a>
       </article>
     {% endfor %}
@@ -154,10 +147,6 @@ layout: default
               <span class="las-sticky-date">{{ post.date | date: "%b %-d, %Y" }}</span>
               <h2 class="las-sticky-title">{{ post.title }}</h2>
             </div>
-            <div class="las-sticky-body">
-              <p class="las-sticky-excerpt">{% include post-summary.html %}</p>
-              <div class="las-sticky-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
-            </div>
           </a>
         </article>
       {% endfor %}
@@ -177,10 +166,6 @@ layout: default
             <div class="las-sticky-overlay">
               <span class="las-sticky-date">{{ post.date | date: "%b %-d, %Y" }}</span>
               <h2 class="las-sticky-title">{{ post.title }}</h2>
-            </div>
-            <div class="las-sticky-body">
-              <p class="las-sticky-excerpt">{% include post-summary.html %}</p>
-              <div class="las-sticky-byline">{% if post.author %}{% assign card_author = site.data.authors[post.author] %}{% if card_author %}{{ card_author.name }} · {% endif %}{% endif %}{{ post.date | date: "%b %-d" }}</div>
             </div>
           </a>
         </article>
