@@ -22,6 +22,8 @@
       </li>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
+        {% comment %} Menu cleanup (user 2026-11-26): Tags and Archives removed from the sidebar nav; the pages stay live at /tags/ and /archives/ but are no longer linked here. {% endcomment %}
+        {% if tab.url == '/tags/' or tab.url == '/archives/' %}{% continue %}{% endif %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
             <i class="fa-fw {{ tab.icon }}"></i>

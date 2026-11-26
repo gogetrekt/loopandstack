@@ -19,6 +19,21 @@ layout: default
   .las-sticky-title { font-size: 1.15rem; line-height: 1.3; font-weight: 700; margin: 0.25rem 0 0; color: #fff; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .las-recent-wrap { margin-top: 2.5rem; }
   .las-recent { display: block; margin-top: 1.25rem; }
+  /* Mobile magazine grid (user 2026-11-26): real 2-col grid like news sites, NOT a stacked list. Overlay cards work at 2-col because the text sits on the image; the old image-top cards looked broken ("cacat") at this width. */
+  @media (max-width: 991px) {
+    .las-sticky { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+    .las-sticky-card { margin-bottom: 0; }
+    .las-sticky-card .preview-img { aspect-ratio: 4 / 3; }
+    .las-sticky-card .las-sticky-overlay { padding: 1.5rem 0.65rem 0.65rem; }
+    .las-sticky-card .las-sticky-title { font-size: 0.9rem; }
+    .las-sticky-card .las-sticky-date { font-size: 0.7rem; }
+    .las-recent { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+    .las-recent-feature { grid-column: span 2; margin-bottom: 0; }
+    .las-recent .las-sticky-card .preview-img { aspect-ratio: 4 / 3; }
+    .las-recent .las-sticky-card:last-child { grid-column: span 2; }
+    .las-recent .las-sticky-card:last-child .preview-img { aspect-ratio: 21 / 9; }
+    .las-recent .las-sticky-card:last-child .las-sticky-title { font-size: 1.05rem; }
+  }
   @media (min-width: 992px) {
     .las-sticky { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     .las-sticky-card { margin-bottom: 0; }
@@ -181,7 +196,10 @@ layout: default
 {% endif %}
 
 {% if paginator.page == 1 %}
-  {% comment %} Older stories as compact rows, HTG Latest-list style {% endcomment %}
+  {% comment %} Older stories as compact rows, HTG Latest-list style.
+    TODO (user rule 2026-11-26): once the archive is big (25+ posts), randomize
+    these 5 from the older pool, never the 10 newest already shown above.
+    Right now there are only 16 posts (pool of 6), so a fixed slice is fine. {% endcomment %}
   {% assign older_count = site.posts.size | minus: paginator.per_page %}
   {% if older_count > 0 %}
   <section class="las-section px-xl-1">
