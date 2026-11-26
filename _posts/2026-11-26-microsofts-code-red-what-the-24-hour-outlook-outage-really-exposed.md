@@ -33,12 +33,12 @@ The timeline runs from July to this week. The defect shipped quietly. The outage
 
 ```mermaid
 flowchart TD
-    A["July 2026: defect ships to Microsoft 365 gateway servers"] --> B["12 Nov, 01:07 UTC: Teams traffic fails over to the Exchange gateway"]
-    B --> C["12 Nov, 16:20 UTC: outage begins, mailboxes unreachable"]
-    C --> D["13 Nov, 16:10 UTC: impact ends, backlog clearing begins"]
-    D --> E["14 Nov, 04:15 UTC: incident declared resolved"]
-    E --> F["20 Nov: Microsoft publishes its final incident report"]
-    F --> G["24 Nov: Code Red declared after internal review"]
+    A["July 2026<br/>Defect ships"] --> B["12 Nov, 01:07 UTC<br/>Teams fails over"]
+    B --> C["12 Nov, 16:20 UTC<br/>Outage begins"]
+    C --> D["13 Nov, 16:10 UTC<br/>Impact ends"]
+    D --> E["14 Nov, 04:15 UTC<br/>Resolved"]
+    E --> F["20 Nov<br/>Final report"]
+    F --> G["24 Nov<br/>Code Red declared"]
 ```
 
 Impact started at 16:20 UTC on November 12 and ended at 16:10 UTC on November 13, with Microsoft declaring the incident resolved early on November 14 after clearing the mail backlog. Exchange Online was hit hardest. Most users could not reach their mailbox through Outlook, Outlook on the web, the mobile apps, Exchange ActiveSync, or the messaging and REST APIs. Microsoft extended its delivery retry window from 24 to 48 hours so queued messages would be delivered instead of bounced, and says no business email was permanently lost. One outside estimate put lost productivity near $7 billion, which gives a sense of the scale even if the exact number is impossible to verify.
@@ -49,9 +49,9 @@ The final report, published November 20, names four factors. None of them is exo
 
 | Factor | What happened |
 |---|---|
-| A latent Windows defect | A change to connection processing on Microsoft 365 gateway servers caused lock contention inside an internal Windows process, exhausting CPU and memory until machines stopped responding. |
-| Reduced capacity | Nearly 14 percent of gateway capacity was offline for routine deployment work when the outage hit. |
-| A Teams failover | At 01:07 UTC, a routing issue in the US East region pushed all Teams traffic onto the gateway that also served Exchange Online. |
+| A latent Windows defect | Lock contention in a Windows process exhausted CPU and memory until gateway machines stopped responding. |
+| Reduced capacity | Nearly 14 percent of gateway capacity was offline for routine deployment work. |
+| A Teams failover | A US East routing issue at 01:07 UTC pushed all Teams traffic onto the Exchange gateway. |
 | Peak traffic | North American demand hit its daily peak on top of the extra load. |
 
 The defect itself is narrow. It lives in a specific Windows configuration used on the gateway servers, and Microsoft says it is not present in standard Windows deployments. Your PC was never at risk from this bug. The failure spread because the gateway servers are the front door to Microsoft 365: every Outlook connection passes through them. When the front door jammed, the whole building went quiet. As servers stopped responding, traffic management shifted connections to healthy machines, which then hit the same defect under the same load and failed too. Recovery worked the same way in reverse, and each server needed five steps to come back: take it out of service, restart it, apply the patch, restart it again, and return it to service. With most of the fleet down at once, that is a long queue.
