@@ -7,7 +7,7 @@ description: "GitHub Issues now has seven real statuses, automatic updates, and 
 author: priya
 image:
   path: /assets/img/posts/github-issue-statuses-boards-lead.svg
-  alt: "A team gathered around a wall of sticky notes (Photo: Pexels)"
+  alt: "The new issue status picker in GitHub, showing all seven statuses (Screenshot: GitHub)"
 og_image: /assets/og/github-issues-just-grew-up-real-statuses-and-boards-inside-your-repo.png
 mermaid: true
 faq:
@@ -75,8 +75,6 @@ This takes about a minute, and it lives inside the repo, not in a separate Proje
 3. Open **View options**, the gear menu, and switch the layout to **board**.
 4. Group by status. Each status becomes a column.
 5. Drag a card into another column to change that issue's status. Columns, swimlanes, visible fields, and sorting are all configurable from the same menu.
-
-![Three teammates moving sticky notes on a glass wall (Photo: Pexels)](/assets/img/posts/github-issue-statuses-boards-team.svg){: width="650" }
 
 When you need more advanced planning, GitHub still points you at Projects: cross-repo views, custom fields at scale, that sort of thing. For one repo, the board inside the repo is now enough, and that is the point. The separate Project was overhead for small teams, and overhead is what kills process adoption. A board nobody opens is worse than no board at all.
 
