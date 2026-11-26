@@ -9,7 +9,6 @@ image:
   path: /assets/img/posts/microsoft-code-red-outlook-outage-lead.svg
   alt: "Microsoft data center in Middenmeer, the Netherlands (Photo: Hay Kranen, CC BY 4.0, via Wikimedia Commons)"
 og_image: /assets/og/microsofts-code-red-what-the-24-hour-outlook-outage-really-exposed.png
-mermaid: true
 faq:
   - q: "Was the November Outlook outage a cyberattack?"
     a: "No. Microsoft's final report rules out malicious activity and AI tooling as causes. The outage came from a latent Windows defect in Microsoft 365 gateway servers, triggered when Teams traffic failed over onto them while capacity was reduced and US traffic peaked."
@@ -30,16 +29,6 @@ That is why Microsoft has now declared a Code Red. One slipped bug would not hav
 ## What actually happened
 
 The timeline runs from July to this week. The defect shipped quietly. The outage hit fast. The reckoning took two weeks.
-
-```mermaid
-flowchart TD
-    A["July 2026<br/>Defect ships"] --> B["12 Nov, 01:07 UTC<br/>Teams fails over"]
-    B --> C["12 Nov, 16:20 UTC<br/>Outage begins"]
-    C --> D["13 Nov, 16:10 UTC<br/>Impact ends"]
-    D --> E["14 Nov, 04:15 UTC<br/>Resolved"]
-    E --> F["20 Nov<br/>Final report"]
-    F --> G["24 Nov<br/>Code Red declared"]
-```
 
 Impact started at 16:20 UTC on November 12 and ended at 16:10 UTC on November 13, with Microsoft declaring the incident resolved early on November 14 after clearing the mail backlog. Exchange Online was hit hardest. Most users could not reach their mailbox through Outlook, Outlook on the web, the mobile apps, Exchange ActiveSync, or the messaging and REST APIs. Microsoft extended its delivery retry window from 24 to 48 hours so queued messages would be delivered instead of bounced, and says no business email was permanently lost. One outside estimate put lost productivity near $7 billion, which gives a sense of the scale even if the exact number is impossible to verify.
 

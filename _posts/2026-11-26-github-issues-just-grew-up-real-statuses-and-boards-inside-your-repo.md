@@ -9,7 +9,6 @@ image:
   path: /assets/img/posts/github-issue-statuses-boards-lead.svg
   alt: "The new issue status picker in GitHub, showing all seven statuses (Screenshot: GitHub)"
 og_image: /assets/og/github-issues-just-grew-up-real-statuses-and-boards-inside-your-repo.png
-mermaid: true
 faq:
   - q: "What are the seven GitHub issue statuses?"
     a: "Backlog, Todo, In progress, In review, Done, Not planned, and Duplicate. They are a fixed set in the public preview, and you pick one when creating an issue or change it from the issue header."
@@ -53,16 +52,6 @@ A status you have to update by hand is a label with better branding. GitHub know
 | You assign a person | Todo |
 | You assign an agent | In progress |
 | A matching status changes in a GitHub Project | Synced both ways |
-
-```mermaid
-flowchart LR
-    A["Backlog"] --> B["Todo"]
-    B --> C["In progress"]
-    C --> D["In review"]
-    D --> E["Done"]
-    A --> F["Not planned"]
-    A --> G["Duplicate"]
-```
 
 Read that table again, especially the agent row. Assign an agent and the issue flips to In progress by itself. That is the detail that gives the game away. These statuses are built for a world where the assignee is sometimes an agent, not a person. Agents can read and set statuses through the GraphQL API, the REST API, and GitHub's MCP server, and a status change can trigger a Copilot automation. The status is shared context between you and the agent, not a comment thread the agent has to parse. Your standup board and your agent's to-do list are finally the same list.
 
