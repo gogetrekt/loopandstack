@@ -47,12 +47,10 @@ Impact started at 16:20 UTC on November 12 and ended at 16:10 UTC on November 13
 
 The final report, published November 20, names four factors. None of them is exotic. That is the point. Each one is routine, and together they exposed a defect that had been sitting there since July.
 
-| Factor | What happened |
-|---|---|
-| A latent Windows defect | Lock contention in a Windows process exhausted CPU and memory until gateway machines stopped responding. |
-| Reduced capacity | Nearly 14 percent of gateway capacity was offline for routine deployment work. |
-| A Teams failover | A US East routing issue at 01:07 UTC pushed all Teams traffic onto the Exchange gateway. |
-| Peak traffic | North American demand hit its daily peak on top of the extra load. |
+- **A latent Windows defect.** A change to connection processing on Microsoft 365 gateway servers caused lock contention inside an internal Windows process, exhausting CPU and memory until machines stopped responding.
+- **Reduced capacity.** Nearly 14 percent of gateway capacity was offline for routine deployment work when the outage hit.
+- **A Teams failover.** At 01:07 UTC, a routing issue in the US East region pushed all Teams traffic onto the gateway that also served Exchange Online.
+- **Peak traffic.** North American demand hit its daily peak on top of the extra load.
 
 The defect itself is narrow. It lives in a specific Windows configuration used on the gateway servers, and Microsoft says it is not present in standard Windows deployments. Your PC was never at risk from this bug. The failure spread because the gateway servers are the front door to Microsoft 365: every Outlook connection passes through them. When the front door jammed, the whole building went quiet. As servers stopped responding, traffic management shifted connections to healthy machines, which then hit the same defect under the same load and failed too. Recovery worked the same way in reverse, and each server needed five steps to come back: take it out of service, restart it, apply the patch, restart it again, and return it to service. With most of the fleet down at once, that is a long queue.
 
