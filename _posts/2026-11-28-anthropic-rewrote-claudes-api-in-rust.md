@@ -64,12 +64,12 @@ Privacy shaped the design too. Anthropic could not read customer requests or Cla
 With diff records flowing in, Anthropic set up three verification loops. The shape of them is the most reusable idea in the whole post.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Shadow traffic: Rust vs Python] --> B[Diff record: checkpoint + fingerprint]
-    B --> C[Inner loop: agent reproduces and fixes in a sandbox, under a second]
+    B --> C[Inner loop: agent fixes in a sandbox, under a second]
     C --> D[Human review at the seam]
-    D --> E[Outer loop: fix checked against live shadow traffic]
-    E --> F[Memory loop: lesson saved as a rule for every agent after]
+    D --> E[Outer loop: fix checked on live shadow traffic]
+    E --> F[Memory loop: lesson saved as a rule]
     F --> A
 ```
 

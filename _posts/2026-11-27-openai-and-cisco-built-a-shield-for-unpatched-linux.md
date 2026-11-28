@@ -9,7 +9,6 @@ image:
   path: /assets/img/posts/shirudo-linux-shield-lead.svg
   alt: "Server racks with blinking status lights in a dark data center (Photo: Pexels)"
 og_image: /assets/og/openai-and-cisco-built-a-shield-for-unpatched-linux.png
-mermaid: true
 faq:
   - q: "Is Shirudo ready to use on my servers?"
     a: "No. It is pre-release, and a production target needs a Linux kernel carrying Shirudo's patches plus a TPM 2.0 chip. The safe way to try it is the VM quickstart, which uses a software TPM."
@@ -44,16 +43,6 @@ Shirudo is a rewrite of Tetragon, the eBPF security platform Cisco's Isovalent t
 ## From a flaw to a shield in seven steps
 
 This is the part I liked most, because it is where Shirudo stops sounding like a press release and starts sounding like engineering. A shield travels a long road before it touches your kernel, and every step is checked.
-
-```mermaid
-flowchart LR
-    A[Agent finds a flaw] --> B[Shield built and signed]
-    B --> C[Packed as a .bee file, pushed to an OCI registry]
-    C --> D[Target pulls it and checks the signature]
-    D --> E[Kernel loads the shield, no restart]
-    E --> F[TPM records the change]
-    F --> G[Operator verifies the evidence]
-```
 
 It starts with an agent reproducing the vulnerability and writing a few lines of BPF C. The operator's tooling compiles it and signs the loader with an ML-DSA-87 key, which is a post-quantum signature scheme. The signed shield is packed into a `.bee` file and pushed to an OCI registry, the same kind of registry that serves container images. The target pulls it, the kernel verifies the signature against a sealed keyring before its verifier even runs, and the shield attaches at the site its signed metadata names. Then the TPM extends a measurement register with the event, so there is a hardware-backed record of exactly which shields were loaded and when. The operator can verify that evidence offline with `shirudo attest`.
 
