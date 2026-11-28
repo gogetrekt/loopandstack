@@ -4,9 +4,9 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-Last updated: November 20, 2026.
+Last updated: November 28, 2026.
 
-This policy explains what information is collected when you visit loop and stack (loopandstack.tech), how it is used, and the choices you have. loop and stack is a static website: we run no user accounts, no comment system, and no contact forms, and we do not ask you for personal information to read the site.
+This policy explains what information is collected when you visit loop and stack (loopandstack.tech), how it is used, and the choices you have. loop and stack is a static website: we run no user accounts and no contact forms, and we do not ask you for personal information to read the site. Articles accept comments through Giscus, which uses your GitHub account; GitHub's handling of that data is covered by GitHub's own privacy statement.
 
 ## Information collected automatically
 

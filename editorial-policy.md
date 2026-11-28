@@ -8,7 +8,7 @@ This page explains how loop and stack content is researched, written, checked, a
 
 ## Sourcing standards
 
-Every article starts with primary sources: official documentation, changelogs, GitHub releases, and vendor pricing pages. Secondary reporting can point us to a fact, but a claim only runs when we can trace it to a primary source or test it ourselves. Sources are linked at the end of each article.
+Every article starts with primary sources: official documentation, changelogs, GitHub releases, and vendor pricing pages. Secondary reporting can point us to a fact, but a claim only runs when we can trace it to a primary source or test it ourselves. Sources are linked inline where the claim is taken from.
 
 Prices, plan limits, and version numbers are checked on the day an article is published. When an article is updated, those details are checked again and the article's updated date changes.
 
